@@ -1,0 +1,210 @@
+// Typography
+// super basic typography styles
+// Author	: Satrya - @msattt
+// URL		: http://tokokoo.com
+// =================================================================================
+
+/* 	HEADING
+	----------------- */
+#{headings(all)} {
+	@include ff-heading;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 1.3em;
+}
+h2 {
+	font-size: 24px;
+	line-height: 1.3em;
+}
+h3 {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+h4 {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+h5 {
+	font-size: 14px;
+	line-height: 1.5em;
+}
+h6 {
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+/* 	TEXT ELEMENT
+	----------------- */
+p {
+	margin: 0 0 rhythm() // output 1.5em;
+}
+
+em {
+	font-style: italic;
+}
+
+b, 
+strong {
+	font-weight: bold; 
+}
+
+small { 
+	font-size: 85%; 
+}
+
+cite {
+	font-style: normal;
+}
+
+dfn {
+	font-style: italic;
+	font-weight: bold;
+}
+sub, 
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+}
+sup { 
+	top: -0.5em;
+	vertical-align: sub;
+}
+
+sub { 
+	bottom: -0.25em;
+	vertical-align: super;
+}
+
+abbr,
+acronym {
+	font-size: 90%;
+	text-transform: uppercase;
+	border-bottom: 1px dotted $grayLight;
+	cursor: help;
+}
+
+del {
+	color: $grayDark;
+	text-decoration: line-through;
+	vertical-align: baseline;
+}
+
+pre {
+	background: #ffff99;
+	border-bottom: 1px solid #ff2;
+	border-top: 1px solid #ff2;
+	color: #990;
+	margin: 1.5em 0;
+	padding: rhythm(.5) rhythm(.3);
+	white-space: pre;
+	white-space: pre-wrap; 
+	word-wrap: break-word; 
+}
+
+code {
+	background: #ffff99;
+	color: #990;
+	font-size: 11px;
+	line-height: 1.2em;
+	padding: rhythm(.2);
+}
+
+pre, 
+code, 
+kbd, 
+samp,
+tt { 
+	font-family: $consolas-font-stack;
+}
+
+ins { 
+	text-decoration: underline;
+}
+
+mark { 
+	background: #ff0;
+	color: #990;
+	font-size: 11px;
+}
+
+/* 	BLOCKQUOTE
+	----------------- */
+blockquote {
+	border-left: 3px solid $grayLighter;
+	color: $grayDark;
+	font-style: italic;
+	font-family: $georgia-font-stack;
+	margin: 1em 40px; 
+	padding-left: rhythm(.9);
+	
+	em,
+	i,
+	cite {
+		font-style: normal;
+	}
+	cite {
+		color: $blackLighter;
+		display: block;
+		padding: 10px 0 0 20px;
+		position: relative;
+		&:before {
+			content: '\2014';
+			left: 0;
+			position: absolute;
+		}
+	}
+}
+
+q:before,
+q:after,
+blockquote:before, 
+blockquote:after {
+  content: "";
+}
+
+address {
+	display: block;
+	margin: 0 0 1.5em;
+	font-style: italic;
+}
+
+/* 	LISTS
+	----------------- */
+ul, 
+ol {
+	margin: 1em 0;
+	padding: 0 0 0 rhythm(1.5); 
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+li ul, 
+li ol {
+	margin: 0;
+}
+
+dl {
+	margin: 0 1.625em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.625em;
+}
