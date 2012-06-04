@@ -1,0 +1,21 @@
+-------------------------------------------------
+Pondasee
+by satrya
+http://tokokoo.com
+Version: 0.0.1
+-------------------------------------------------
+
+-------------------------------------------------
+What is Pondasee? 
+-------------------------------------------------
+Pondasee is our super basic HTML, CSS & Javascript for developing all theme on Tokokoo. This project release under GPL lincesing, so feel free to customize it to fit your personal needs!.
+
+-------------------------------------------------
+Included files
+-------------------------------------------------
+1. jQuery library
+2. Modernizr
+3. Formalize
+4. Selectivizr
+5. Nwmathcer
+6. Font Awesome
