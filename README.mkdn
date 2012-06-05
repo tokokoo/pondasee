@@ -1,11 +1,11 @@
 PONDASEE
 ===========================
-*Basic HTML, CSS(sass) Framework, UI Kit  & Javascript*
+*Basic HTML, CSS(sass) Starter, UI Kit and Javascript*
 
 What is Pondasee? 
 ---------------------
 
-Pondasee is our super basic HTML, CSS(sass) Framework, UI Kit  & Javascript for developing all theme on Tokokoo. This project is still under development or beta version.
+Pondasee is NOT a css framework, it only our super basic HTML, CSS(sass) Starter, UI Kit  & Javascript for developing all theme on Tokokoo. This project is still under development or beta version.
 
 What's included ?
 -------------------------
@@ -19,12 +19,20 @@ What's included ?
 * [Images](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_images.scss)
 * [Helper Classes](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_utilities.scss)
 
+Components
+-------------------------
 
-MIT Open Source License
-=======================
+* HTML5 Boilerplate: The Unlicense
+* Modernizr: MIT/BSD license
+* jQuery: MIT/GPL license
+* Normalize.css: Public Domain
+* Formalize: MIT/GPL license
+* Selectivizr: MIT license
+* NWmatcher: MIT license
+* Font Awesome: CC BY 3.0 license
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Everything else
+-------------------------
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+The Unlicense - No License - What ever you want!
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
