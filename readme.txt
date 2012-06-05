@@ -19,10 +19,10 @@ All contribution are welcome, fork this repo then submit your pull request :)
 Included files
 -------------------------------------------------
 1. jQuery library
-2. Modernizr
+2. Modernzr
 3. Formalize
 4. Selectivizr
-5. Nwmathcer
+5. NWmatcher
 6. Font Awesome
 
 -------------------------------------------------
