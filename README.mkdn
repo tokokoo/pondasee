@@ -21,9 +21,9 @@ What's included ?
 
 Quick start
 -------------------------
+* Install [compass](http://compass-style.org/install/)
 * Clone this project `git clone git://github.com/tokokoo/pondasee.git`
 * Or you can download the zip file [here](https://github.com/tokokoo/pondasee/zipball/master)
-* Install [compass](http://compass-style.org/install/)
 
 Components
 -------------------------
