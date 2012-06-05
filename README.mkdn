@@ -5,7 +5,7 @@ PONDASEE
 What is Pondasee? 
 ---------------------
 
-Pondasee is NOT a css framework, it is only our super basic HTML, CSS(sass) Starter, UI Kit  & Javascript for developing all theme on Tokokoo. This project is still under development or beta version.
+Pondasee is NOT a css framework, it is only our super basic HTML, CSS(sass) Starter, UI Kit  & Javascript for developing all theme on Tokokoo. If you want to use this project as your starting point, you need to know basic knowledge of [Compass](http://compass-style.org/) and [Sass](http://sass-lang.com/).
 
 What's included ?
 -------------------------
