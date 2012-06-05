@@ -10,4 +10,4 @@ Pondasee is our super basic HTML, CSS(sass) Framework, UI Kit  & Javascript for 
 What's included ?
 -------------------------
 
-* `[HTML Kit](https://github.com/tokokoo/pondasee/blob/master/index.html)`
+* [HTML Kit](https://github.com/tokokoo/pondasee/blob/master/index.html)
