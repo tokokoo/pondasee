@@ -11,3 +11,6 @@ What's included ?
 -------------------------
 
 * [HTML Kit](https://github.com/tokokoo/pondasee/blob/master/index.html)
+* [Reset CSS](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_reset.scss)
+* [Typography](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_typography.scss)
+* [Forms](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_forms.scss)
