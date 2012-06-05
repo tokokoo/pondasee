@@ -1,12 +1,12 @@
 @charset "utf-8";
 /*
-Theme Name:		HTML Kit
+Theme Name:		Pondasee
 Theme URI:  	
 Version: 		0.0.1
 Author: 		Satrya
 Author URI:		http://tokokoo.com
-License: 		GNU General Public License v3
-License URI: 	http://www.gnu.org/licenses/gpl-3.0.html
+License: 		
+License URI: 	
 */
 
 /* 
@@ -14,6 +14,8 @@ License URI: 	http://www.gnu.org/licenses/gpl-3.0.html
    =============================================================================
 	- Reset Stylesheet
 		Simpler version of Normalize.css + Eric Meyer Reset
+	- Base
+		Font size, selection & links
 	- Grid Basic
 		Grid basic, based on blueprint css framewrok
 	- Typography
@@ -24,6 +26,8 @@ License URI: 	http://www.gnu.org/licenses/gpl-3.0.html
 		Base styles for various input types and form layouts
 	- Table
 		Base styles for all tables
+	- Images
+		Basic and global styles for images, caption, & gallery
 	- Utility
 		List of helper classes (eg clearfix, alignment, etc)
 	- Media Queries
@@ -35,16 +39,20 @@ License URI: 	http://www.gnu.org/licenses/gpl-3.0.html
 
 @import "compass";
 @import "blueprint";
-@import "sassy-buttons";
 @import "partials/variable";
 @import "partials/mixins";
-@import "partials/sassybuttons";
 
 /* =============================================================================
 - Reset Stylesheet
 Simpler version of Normalize.css + Eric Meyer Reset
 ============================================================================= */
 @import "partials/reset";
+
+/* =============================================================================
+- Base
+Font size, selection & links
+============================================================================= */
+@import "partials/base";
 
 /* =============================================================================
 - Grid Basic
@@ -75,6 +83,12 @@ Base styles for various input types and form layouts
 Base styles for all tables
 ============================================================================= */
 @import "partials/table";
+
+/* =============================================================================
+- Images
+Basic and global styles for images, caption, & gallery
+============================================================================= */
+@import "partials/images";
 
 /* =============================================================================
 - Utility

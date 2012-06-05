@@ -6,17 +6,15 @@
 
 // Font awesome
 // ------------------
-$font_path: "fontawesome-webfont" !default;
-
 @include font-face (
 	'FontAwesome',
 	font-files(
-		"#{$font_path}.woff", woff,
-		"#{$font_path}.ttf", truetype,
-		"#{$font_path}.otf", opentype,
-		"#{$font_path}.svgz#FontAwesomeRegular", svg,
-		"#{$font_path}.svg#FontAwesomeRegular", svg),
-	'#{$font_path}.eot',
+		'fontawesome-webfont.woff', woff,
+		'fontawesome-webfont.ttf', truetype,
+		'fontawesome-webfont.otf', opentype,
+		'fontawesome-webfont.svgz#FontAwesomeRegular', svg,
+		'fontawesome-webfont.svg#FontAwesomeRegular', svg),
+	'fontawesome-webfont.eot',
 	normal,
 	normal
 );

@@ -1,0 +1,23 @@
+@include establish-baseline(16px);
+
+/* 	SELECTION
+	----------------- */
+@include selection(#000, #fff);
+
+
+/* 	LINKS
+	----------------- */
+a {
+	color: $linkColor;
+	text-decoration: none;
+	&:visited {
+		color: $linkColor;
+	}
+	&:hover {
+		color: $linkHover;
+		text-decoration: none;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+}

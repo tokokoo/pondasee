@@ -8,7 +8,6 @@
 #
 
 # Require any additional compass plugins here.
-require 'sassy-buttons'
 
 # Can be :stand_alone or :rails. Defaults to :stand_alone
 project_type = :stand_alone
@@ -20,7 +19,6 @@ css_dir         = "/"
 sass_dir        = "sass"
 images_dir      = "img"
 javascripts_dir = "js"
-fonts_path		= "fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output option: nested, expanded, compact, compressed
