@@ -8,7 +8,12 @@ Version: 0.0.1
 -------------------------------------------------
 What is Pondasee? 
 -------------------------------------------------
-Pondasee is our super basic HTML, CSS & Javascript for developing all theme on Tokokoo. This project release under GPL lincesing, so feel free to customize it to fit your personal needs!.
+Pondasee is our super basic HTML, CSS(sass) Framework, UI Kit  & Javascript for developing all theme on Tokokoo. This project release under GPL lincesing, so feel free to customize it to fit your personal needs!.
+
+-------------------------------------------------
+What's included ?
+-------------------------------------------------
+- HTML kit
 
 -------------------------------------------------
 Contribute
@@ -16,7 +21,7 @@ Contribute
 All contribution are welcome, fork this repo then submit your pull request :)
 
 -------------------------------------------------
-Included files
+Plugin files
 -------------------------------------------------
 1. jQuery library
 2. Modernzr

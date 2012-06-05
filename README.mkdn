@@ -1,0 +1,13 @@
+PONDASEE
+===========================
+*Basic HTML, CSS(sass) Framework, UI Kit  & Javascript*
+
+What is Pondasee? 
+---------------------
+
+Pondasee is our super basic HTML, CSS(sass) Framework, UI Kit  & Javascript for developing all theme on Tokokoo. This project release under GPL lincesing, so feel free to customize it to fit your personal needs!.
+
+What's included ?
+-------------------------
+
+* `[HTML Kit](https://github.com/tokokoo/pondasee/blob/master/index.html)`
