@@ -100,9 +100,7 @@ pre {
 	color: #990;
 	margin: 1.5em 0;
 	padding: rhythm(.5) rhythm(.3);
-	white-space: pre;
-	white-space: pre-wrap; 
-	word-wrap: break-word; 
+	@include force-wrap;
 }
 
 code {
