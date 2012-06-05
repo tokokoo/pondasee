@@ -1,5 +1,5 @@
 /*
-Theme Name:		HTML Kit
+Theme Name:		Pondasee
 Theme URI:  	
 Version: 		0.0.1
 Author: 		Satrya
@@ -12,6 +12,8 @@ License URI:
    =============================================================================
 	- Reset Stylesheet
 		Simpler version of Normalize.css + Eric Meyer Reset
+	- Base
+		Font size, selection & links
 	- Grid Basic
 		Grid basic, based on blueprint css framewrok
 	- Typography
@@ -128,6 +130,58 @@ input[type="checkbox"] {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* =============================================================================
+- Base
+Font size, selection & links
+============================================================================= */
+* html {
+  font-size: 100%;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+body {
+  background: white;
+  color: #555555;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 	SELECTION
+	----------------- */
+::-moz-selection {
+  background: black;
+  color: white;
+  text-shadow: none;
+}
+
+::selection {
+  background: black;
+  color: white;
+  text-shadow: none;
+}
+
+/* 	LINKS
+	----------------- */
+a {
+  color: #00baff;
+  text-decoration: none;
+}
+a:visited {
+  color: #00baff;
+}
+a:hover {
+  color: #00baff;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted;
 }
 
 /* =============================================================================

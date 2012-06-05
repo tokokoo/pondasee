@@ -1,6 +1,6 @@
 @charset "utf-8";
 /*
-Theme Name:		HTML Kit
+Theme Name:		Pondasee
 Theme URI:  	
 Version: 		0.0.1
 Author: 		Satrya
@@ -14,6 +14,8 @@ License URI:
    =============================================================================
 	- Reset Stylesheet
 		Simpler version of Normalize.css + Eric Meyer Reset
+	- Base
+		Font size, selection & links
 	- Grid Basic
 		Grid basic, based on blueprint css framewrok
 	- Typography
@@ -45,6 +47,12 @@ License URI:
 Simpler version of Normalize.css + Eric Meyer Reset
 ============================================================================= */
 @import "partials/reset";
+
+/* =============================================================================
+- Base
+Font size, selection & links
+============================================================================= */
+@import "partials/base";
 
 /* =============================================================================
 - Grid Basic
