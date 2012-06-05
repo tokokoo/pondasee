@@ -24,6 +24,8 @@ License URI: 	http://www.gnu.org/licenses/gpl-3.0.html
 		Base styles for various input types and form layouts
 	- Table
 		Base styles for all tables
+	- Images
+		Basic and global styles for images, caption, & gallery
 	- Utility
 		List of helper classes (eg clearfix, alignment, etc)
 	- Media Queries
@@ -75,6 +77,12 @@ Base styles for various input types and form layouts
 Base styles for all tables
 ============================================================================= */
 @import "partials/table";
+
+/* =============================================================================
+- Images
+Basic and global styles for images, caption, & gallery
+============================================================================= */
+@import "partials/images";
 
 /* =============================================================================
 - Utility
