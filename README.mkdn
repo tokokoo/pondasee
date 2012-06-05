@@ -18,6 +18,7 @@ What's included ?
 * [Table](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_table.scss)
 * [Images](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_images.scss)
 * [Helper Classes](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_utilities.scss)
+* [Helper Mixins](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_helper.scss)
 
 Quick start
 -------------------------
