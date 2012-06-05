@@ -5,7 +5,7 @@ PONDASEE
 What is Pondasee? 
 ---------------------
 
-Pondasee is NOT a css framework, it is only our super basic HTML, CSS(sass) Starter, UI Kit  & Javascript for developing all theme on Tokokoo. If you want to use this project as your starting point, you need to know basic knowledge of [Compass](http://compass-style.org/) and [Sass](http://sass-lang.com/).
+Pondasee is NOT a css framework, it is only our super basic HTML, CSS(sass) Starter w/ custom mixins, UI Kit  & Javascript for develope all themes on Tokokoo. If you want to use this project as your starting point, you need to know basic knowledge of [Compass](http://compass-style.org/) and [Sass](http://sass-lang.com/).
 
 What's included ?
 -------------------------
@@ -21,9 +21,10 @@ What's included ?
 
 Quick start
 -------------------------
-* Install [compass](http://compass-style.org/install/)
+* Install Compass, you can read on compass official site, [here](http://compass-style.org/install/)
 * Clone this project `git clone git://github.com/tokokoo/pondasee.git`
 * Or you can download the zip file [here](https://github.com/tokokoo/pondasee/zipball/master)
+* Compile `pondasee` project folder and you're ready to go! :D
 
 Components
 -------------------------

@@ -8,7 +8,6 @@
 #
 
 # Require any additional compass plugins here.
-require 'sassy-buttons'
 
 # Can be :stand_alone or :rails. Defaults to :stand_alone
 project_type = :stand_alone
