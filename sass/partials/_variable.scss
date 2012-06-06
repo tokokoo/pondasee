@@ -13,7 +13,7 @@ $blueprint-grid-width: 20px;
 $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
 $blueprint-container-size: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin;
 
-// Baseline
+// Grid & baseline setup
 // ------------------
 $grid-background-baseline-color	: rgba(black, .05);
 $grid-background-column-color	: rgba(red, .1);

@@ -26,7 +26,7 @@ License URI:
 		Base styles for all tables
 	- Images
 		Basic and global styles for images, caption, & gallery
-	- Utility
+	- Utilities
 		List of helper classes (eg clearfix, alignment, etc)
 	- Media Queries
 		Styles for adaptive layouts
@@ -537,7 +537,7 @@ dd {
 
 /* =============================================================================
 - Font Awesome
-Font icons
+Font icons - http://fortawesome.github.com/Font-Awesome
 ============================================================================= */
 /*  Font Awesome
 	http://fortawesome.github.com/Font-Awesome
@@ -2060,7 +2060,7 @@ object {
 }
 
 /* =============================================================================
-- Utility
+- Utilities
 List of helper classes (eg clearfix, alignment, etc)
 ============================================================================= */
 /* 	CLEARFIX
