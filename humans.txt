@@ -4,13 +4,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Tokokoo -- CEO -- @tokokoo
 
 # THANKS
 
-    Author: Satrya
-	URL: tokokoo.com
-	Twitter: @msattt & @tokokoo
+    <name>
 
 # TECHNOLOGY COLOPHON
 
