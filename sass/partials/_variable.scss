@@ -1,20 +1,19 @@
 // Variable
-// Feel free to customize this collections
-// Author	: Satrya - @msattt
-// URL		: http://tokokoo.com
+// Setup your global variable
 // =================================================================================
 
 // Blueprint grid variable
 // ------------------
-$blueprint-grid-columns: 24;
-$blueprint-grid-margin: 20px;
-$blueprint-grid-width: 20px;
-
-$blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin;
-$blueprint-container-size: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin;
+$blueprint-grid-columns		: 24;
+$blueprint-grid-margin		: 20px;
+$blueprint-grid-width		: 20px;
+$blueprint-grid-outer-width	: $blueprint-grid-width + $blueprint-grid-margin;
+$blueprint-container-size	: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin;
 
 // Grid & baseline setup
 // ------------------
+$base-font-size					: 16px;
+$base-line-height				: 24px;
 $grid-background-baseline-color	: rgba(black, .05);
 $grid-background-column-color	: rgba(red, .1);
 $grid-background-total-columns	: 24;

@@ -13,7 +13,7 @@ License URI:
 	- Reset Stylesheet
 		Simpler version of Normalize.css + Eric Meyer Reset
 	- Base
-		Font size, selection & links
+		Baseline, selection & links
 	- Grid Basic
 		Grid basic, based on blueprint css framewrok
 	- Typography
@@ -26,10 +26,12 @@ License URI:
 		Base styles for all tables
 	- Images
 		Basic and global styles for images, caption, & gallery
+	- Main
+		Global and main styles
 	- Utilities
 		List of helper classes (eg clearfix, alignment, etc)
 	- Media Queries
-		Styles for adaptive layouts
+		Styles for responsive layouts
 	- Conditional IE class
 		Style for IE only
    =============================================================================
@@ -134,7 +136,7 @@ table {
 
 /* =============================================================================
 - Base
-Font size, selection & links
+Baseline, selection & links
 ============================================================================= */
 * html {
   font-size: 100%;
@@ -2060,6 +2062,10 @@ object {
 }
 
 /* =============================================================================
+- Main
+Global and main styles
+============================================================================= */
+/* =============================================================================
 - Utilities
 List of helper classes (eg clearfix, alignment, etc)
 ============================================================================= */
@@ -2223,7 +2229,7 @@ hr.lightborder {
 
 /* =============================================================================
 - Media Queries
-Styles for adaptive layouts
+Styles for responsive layouts
 ============================================================================= */
 /* desktop */
 /* ipad */
