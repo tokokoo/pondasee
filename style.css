@@ -2081,7 +2081,7 @@ Global and main styles
 .site-header {
   margin: 80px 0 50px;
 }
-.site-header h1 {
+.site-header div {
   text-indent: 110%;
   white-space: nowrap;
   overflow: hidden;
@@ -2190,11 +2190,12 @@ Global and main styles
   *zoom: 1;
 }
 
-.presentation h1 {
-  font-size: 30px;
-  margin-bottom: 30px;
-}
 .presentation h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.presentation h3 {
+  font-size: 24px;
   margin-bottom: 5px;
 }
 .presentation ul {
