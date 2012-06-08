@@ -42,4 +42,4 @@ Components
 Everything else
 -------------------------
 
-The Unlicense - No License - What ever you want!
+The Unlicense - Public Domain - What ever you want!
