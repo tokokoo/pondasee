@@ -1,13 +1,13 @@
 PONDASEE
 ===========================
-*Basic HTML, CSS(sass) Starter, UI Kit and Javascript*
+*Basic HTML, CSS(scss) Starter, UI Kit and Javascript*
 
 What is Pondasee? 
 ---------------------
 
-Pondasee is NOT a css framework, it is only our super basic HTML, CSS(sass) Starter w/ custom mixins, UI Kit  & Javascript to build a theme. If you want to use this project as your starting point, you need to know basic knowledge of [Compass](http://compass-style.org/) and [Sass](http://sass-lang.com/).
+Pondasee is NOT a css framework, it is only our super basic HTML, CSS(scss) Starter w/ custom mixins, UI Kit & Javascript to build a theme. If you want to use this project as your starting point, you need to know basic knowledge of [Compass](http://compass-style.org/) and [Sass](http://sass-lang.com/).
 
-What's included ?
+What's inside ?
 -------------------------
 
 * [HTML Kit](https://github.com/tokokoo/pondasee/blob/master/index.html)
@@ -17,7 +17,7 @@ What's included ?
 * [Forms](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_forms.scss)
 * [Table](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_table.scss)
 * [Images](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_images.scss)
-* [Mixin Button](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_basic-buttons.scss)
+* [Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_basic-buttons.scss)
 * [Helper Classes](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_utilities.scss)
 * [Helper Mixins](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_helper.scss)
 
