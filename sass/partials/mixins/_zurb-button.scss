@@ -1,0 +1,62 @@
+// ZURB button Mixins
+// Mixins for zurb button - http://www.zurb.com/article/266/super-awesome-buttons-with-css3-and-rgba
+// Author	: Satrya - @msattt
+// URL		: http://tokokoo.com
+// =================================================================================
+
+$default-bgcolor: $blackLight !default;
+$default-border-radius: 3px !default;
+$default-font-size: 13px !default;
+$default-padding: 5px 15px 6px !default;
+$default-color: $white !default;
+
+@mixin zurb-button( $bgcolor: $default-bgcolor, $color: $default-color, $border-radius: $default-border-radius, $font-size: $default-font-size, $padding: $default-padding, $display: "inline-block" ) {
+
+	@include zurb-button-main( $bgcolor, $color, $border-radius, $font-size, $padding );
+	@include zurb-button-structure( $display );
+	
+	&:hover {
+		background-color: darken( $bgcolor, 8% );
+		text-decoration: none;
+	}
+	&:visited {
+		color: $color;
+	}
+	&:active {
+		top: 1px;
+	}
+}
+
+@mixin zurb-button-main( $bgcolor: $default-bgcolor, $color: $default-color, $border-radius: $default-border-radius, $font-size: $default-font-size, $padding: $default-padding ) {
+
+	background: $bgcolor image-url('overlay-button.png') repeat-x;
+	@include border-radius( $border-radius );
+	@include single-box-shadow( rgba( $black, .3 ), 0, 1px, 2px, 0, false );
+	border-bottom: 1px solid rgba( $black, .25 );
+	color: $color;
+	font-size: $font-size;
+	padding: $padding;
+	@include text-shadow( 0 -1px 1px rgba( $black, .25 ) );
+	@include user-select( none );
+	
+}
+
+@mixin zurb-button-structure( $display: "inline-block" ) {
+	
+	border: none;
+	cursor: pointer;
+	font-weight: normal;
+	position: relative;
+	text-decoration: none;
+	
+	@if $display == "inline-block" {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+	} @if $display == "inline" {
+		display: inline;
+	} @if $display == "block" {
+		display: block;
+	}
+	
+}

@@ -1,0 +1,43 @@
+// Fonts & @font-face mixins
+// Feel free to customize it!
+// =================================================================================
+
+// Font awesome
+// ------------------
+@include font-face (
+	'FontAwesome',
+	font-files(
+		'fontawesome-webfont.woff', woff,
+		'fontawesome-webfont.ttf', truetype,
+		'fontawesome-webfont.otf', opentype,
+		'fontawesome-webfont.svg#FontAwesome', svg),
+	'fontawesome-webfont.eot',
+	normal,
+	normal
+);
+
+@include font-face (
+	'Museo300Regular',
+	font-files(
+		'Museo300-Regular-webfont.woff', woff,
+		'Museo300-Regular-webfont.ttf', truetype,
+		'Museo300-Regular-webfont.svg#Museo300Regular', svg),
+	'Museo300-Regular-webfont.eot',
+	normal,
+	normal
+);
+
+// Font mixins
+// ------------------
+@mixin ff-text {
+	font-family: $arial-font-stack; // Basic & global font
+}
+@mixin ff-heading {
+	font-family: 'Museo300Regular'; // Font only for all heading eg. h1, h2 etc
+}
+@mixin ff-decorative{
+	font-family: $cursive-font-stack;
+}
+@mixin ff-mono{
+	font-family: $consolas-font-stack;
+}

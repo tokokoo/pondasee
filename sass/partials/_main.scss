@@ -1,0 +1,93 @@
+// Main styles
+// You can write your main styles(eg: content, article etc) here
+// =================================================================================
+.container {
+	text-align: center;
+}
+
+$hide-text-direction: right;
+.site-header {
+	margin: 80px 0 50px;
+	h1 {
+		@include replace-text( 'logo.png' );
+		height: 81px;
+		margin-bottom: 30px;
+	}
+	.site-tagline {
+		@include ff-heading;
+		font-size: 30px;
+		line-height: 1.3em;
+		@include reset-float;
+		margin: auto;
+	}
+}
+
+#main {
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+
+.site-content {
+	background: image-url('separator.png') no-repeat bottom center;
+	overflow: hidden;
+	padding-bottom: 120px;
+}
+
+.action-button {
+	display: block;
+	margin-bottom: 20px;
+	span {
+		font-size: 25px;
+		padding-right: 10px;
+		vertical-align: middle;
+	}
+}
+
+.btn {
+	@include button-size( 20px );
+	@include button-struture;
+	@include ff-heading;
+	&.view {
+		@include button-base( #c14c4f, #fff, false, false, dark );
+		margin-right: 20px;
+	}
+	&.dl {
+		@include button-base( #fff, #333, false, false );
+	}
+}
+
+.follow-button {
+	min-height: 30px;
+	@include reset-list;
+	text-align: center;
+	overflow: hidden;
+	li {
+		display: inline-block;
+		*display: block;
+		width: 150px;
+		*zoom: 1;
+	}
+}
+
+.presentation {
+	h1 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+	h2 {
+		margin-bottom: 5px;
+	}
+	ul {
+		@include reset-list;
+		font-size: 14px;
+		li {
+			padding-bottom: 10px;
+		}
+	}
+}
+
+.site-footer {
+	background: rgb(0, 0, 0);
+	background: rgba($black, .3);
+	padding: 40px 0;
+}

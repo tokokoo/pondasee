@@ -1,0 +1,117 @@
+@charset "utf-8";
+/*
+Theme Name:		Pondasee Demo
+Theme URI:  	
+Version: 		0.0.1
+Author: 		Satrya
+Author URI:		http://tokokoo.com
+License: 		
+License URI: 	
+*/
+
+/* 
+   Table of Contents
+   =============================================================================
+	- Reset Stylesheet
+		Simpler version of Normalize.css + Eric Meyer Reset
+	- Base
+		Baseline, selection & links
+	- Grid Basic
+		Grid basic, based on blueprint css framewrok
+	- Typography
+		Headings, text element, lists, code, and more
+	- Font Awesome
+		Font icons
+	- Form
+		Base styles for various input types and form layouts
+	- Table
+		Base styles for all tables
+	- Images
+		Basic and global styles for images, caption, & gallery
+	- Main
+		Global and main styles
+	- Utilities
+		List of helper classes (eg clearfix, alignment, etc)
+	- Media Queries
+		Styles for responsive layouts
+	- Conditional IE class
+		Style for IE only
+   =============================================================================
+*/
+
+@import "compass";
+@import "blueprint";
+@import "partials/variable";
+@import "partials/mixins";
+
+/* =============================================================================
+- Reset Stylesheet
+Simpler version of Normalize.css + Eric Meyer Reset
+============================================================================= */
+@import "partials/reset";
+
+/* =============================================================================
+- Base
+Baseline, selection & links
+============================================================================= */
+@import "partials/base";
+
+/* =============================================================================
+- Grid Basic
+Grid basic, based on blueprint css framewrok
+============================================================================= */
+@import "partials/grid";
+
+/* =============================================================================
+- Typography
+Headings, text element, lists, code, and more
+============================================================================= */
+@import "partials/typography";
+
+/* =============================================================================
+- Font Awesome
+Font icons - http://fortawesome.github.com/Font-Awesome
+============================================================================= */
+@import "partials/font-awesome";
+
+/* =============================================================================
+- Form
+Base styles for various input types and form layouts
+============================================================================= */
+@import "partials/forms";
+
+/* =============================================================================
+- Table
+Base styles for all tables
+============================================================================= */
+@import "partials/table";
+
+/* =============================================================================
+- Images
+Basic and global styles for images, caption, & gallery
+============================================================================= */
+@import "partials/images";
+
+/* =============================================================================
+- Main
+Global and main styles
+============================================================================= */
+@import "partials/main";
+
+/* =============================================================================
+- Utilities
+List of helper classes (eg clearfix, alignment, etc)
+============================================================================= */
+@import "partials/utilities";
+
+/* =============================================================================
+- Media Queries
+Styles for responsive layouts
+============================================================================= */
+@import "partials/media-queries";
+
+/* =============================================================================
+- Conditional IE class
+	Style for IE only
+============================================================================= */
+@import "partials/ie";
