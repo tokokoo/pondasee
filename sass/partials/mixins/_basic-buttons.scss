@@ -1,0 +1,105 @@
+// Basic button Mixins
+// Mixins to create a simple and basic buttons
+// Author	: Satrya - @msattt
+// URL		: http://tokokoo.com
+// =================================================================================
+@import "compass/css3/user-interface";
+
+$default-border		: false !default;
+$default-shadow		: false !default;
+$default-text-shadow: light !default;
+$default-fsize		: 16px !default;
+$default-pad		: 14px 24px !default;
+$default-radius		: 3px !default;
+$default-display	: "inline-block" !default;
+$default-margin		: 0 !default;
+
+@mixin button( 
+	$bg-color, 
+	$color, 
+	$border		: $default-border, 
+	$shadow		: $default-shadow, 
+	$text-shad	: $default-text-shadow, 
+	$fsize		: $default-fsize, 
+	$pad		: $default-pad, 
+	$radius		: $default-radius, 
+	$display	: $default-display, 
+	$margin		: $default-margin 
+) {
+	@include button-base( $bg-color, $color, $border, $shadow );
+	@include button-size( $fsize, $pad  );
+	@include button-struture( $radius, $display, $margin );
+}
+
+@mixin button-base( 
+	$bg-color, 
+	$color, 
+	$border		: $default-border, 
+	$shadow		: $default-shadow, 
+	$text-shad	: $default-text-shadow 
+) {
+	$dark-color: darken($bg-color, 10%);
+	$border-color: darken($bg-color, 15%);
+	$text-shadow-color: darken($bg-color, 20%);
+	
+	background-color: $bg-color;
+	@include background-image( linear-gradient( $bg-color, $dark-color) );
+	@if $border == true {
+		border: 1px solid $border-color;
+	}
+	@if $shadow == true {
+		@include box-shadow(
+			inset 0 1px 0 rgba($white, .2), 
+			0 1px 2px rgba($black, .05)
+		);
+	}
+	color: $color;
+	@if $text-shad == light {
+		@include text-shadow( $white 0 1px 1px );
+	} @if $text-shad == dark {
+		@include text-shadow( $text-shadow-color 0 -1px 0 );
+	}
+	
+	
+	&:hover, 
+	&:focus {
+		background: darken($bg-color, 5%);
+		color: $color;
+	}
+	
+	&:active {
+	
+	}
+}
+
+@mixin button-size( 
+	$fsize	: $default-fsize, 
+	$pad	: $default-pad 
+) {
+	font-size: $fsize;
+	padding: $pad;
+}
+
+@mixin button-struture( 
+	$radius		: $default-radius, 
+	$display	: $default-display, 
+	$margin		: $default-margin 
+) {
+	@include border-radius( $radius );
+	cursor: pointer;
+	@if $display == "inline-block" {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+	} @if $display == "inline" {
+		display: inline;
+	} @if $display == "block" {
+		display: block;
+	}
+	font-weight: normal;
+	line-height: 1;
+	margin: $margin;
+	position: relative;
+	text-decoration: none;
+	@include user-select( none );
+}
