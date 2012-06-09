@@ -2159,6 +2159,11 @@ Global and main styles
   background: #b53f42;
   color: white;
 }
+.btn.view:active {
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 8px;
+}
 .btn.dl {
   background-color: white;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
@@ -2173,6 +2178,11 @@ Global and main styles
 .btn.dl:hover, .btn.dl:focus {
   background: #f2f2f2;
   color: #333333;
+}
+.btn.dl:active {
+  -webkit-box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  -moz-box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 8px;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 8px;
 }
 
 .follow-button {

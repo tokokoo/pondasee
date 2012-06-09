@@ -68,7 +68,7 @@ $default-margin		: 0 !default;
 	}
 	
 	&:active {
-	
+		@include box-shadow( inset rgba($black, .5) 0px 0px 8px );
 	}
 }
 
