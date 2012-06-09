@@ -191,6 +191,9 @@ a:focus {
 Grid basic, based on blueprint css framewrok
 ============================================================================= */
 /* 	GRID LAYOUT - 24 column grid
+	24 columns
+	20px Gutter
+	20px Column width
 	----------------- */
 .container {
   margin: 0 auto;
