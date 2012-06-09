@@ -68,7 +68,7 @@ $default-margin		: 0 !default;
 	}
 	
 	&:active {
-	
+		@include single-box-shadow( rgba($black, .5), 0, 0, 8px, 0, true );
 	}
 }
 
