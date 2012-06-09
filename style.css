@@ -576,7 +576,7 @@ a [class*=" icon-"] {
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: middle;
-  font-size: 4/3em;
+  font-size: 1.3333333333333333em;
 }
 
 .btn [class^="icon-"],
@@ -2221,7 +2221,15 @@ Global and main styles
 .site-footer {
   background: black;
   background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
   padding: 40px 0;
+}
+
+.credits {
+  margin-bottom: 40px;
+}
+.credits p {
+  margin: 0;
 }
 
 /* =============================================================================

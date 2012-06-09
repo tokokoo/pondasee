@@ -90,5 +90,13 @@ $hide-text-direction: right;
 .site-footer {
 	background: rgb(0, 0, 0);
 	background: rgba($black, .3);
+	margin-bottom: 10px;
 	padding: 40px 0;
+}
+
+.credits {
+	margin-bottom: 40px;
+	p {
+		margin: 0;
+	}
 }
