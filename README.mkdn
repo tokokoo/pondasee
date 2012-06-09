@@ -28,7 +28,7 @@ Project information
 -------------------------
 Pondasee is crafted and developed by [Tokokoo Team](http://tokokoo.com), feel free to send us some feedback!
 
-& Source: [http://tokokoo.github.com/pondasee](http://tokokoo.github.com/pondasee)
+* Source: [http://tokokoo.github.com/pondasee](http://tokokoo.github.com/pondasee)
 * Twitter: [@tokokoo](http://twitter.com/tokokoo)
 
 Components
