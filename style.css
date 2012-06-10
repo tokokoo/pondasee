@@ -570,7 +570,7 @@ a [class*=" icon-"] {
 /* makes the font 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: middle;
-  font-size: 4/3em;
+  font-size: 1.3333333333333333em;
 }
 
 .btn [class^="icon-"],
