@@ -3,5 +3,10 @@
 // =================================================================================
 
 .oldie {
-	
+	.site-footer {
+		background: transparent;
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)";
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+		zoom: 1;
+	}
 }

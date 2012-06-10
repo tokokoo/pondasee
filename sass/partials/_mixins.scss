@@ -23,6 +23,7 @@
 		@include adjust-leading-to(1, if($relative-font-sizing, $font-size, $base-font-size)); 
 	}
 	body {
+		@include background( #2a323a image-url('bg-pattern.png') repeat left center );
 		@include background(
 			image-url('bg-pattern.png') repeat left center,
 			image-url('bg-img.png') repeat left center

@@ -156,6 +156,7 @@ html {
 }
 
 body {
+  background: #2a323a url('img/bg-pattern.png') repeat left center;
   background: url('img/bg-pattern.png') repeat left center, url('img/bg-img.png') repeat left center;
   border-top: 7px solid #aa4346;
   color: white;
@@ -2407,3 +2408,9 @@ Styles for responsive layouts
 - Conditional IE class
 	Style for IE only
 ============================================================================= */
+.oldie .site-footer {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  zoom: 1;
+}
