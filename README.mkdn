@@ -46,4 +46,4 @@ Components
 Everything else
 -------------------------
 
-Public Domain
+[The Unlicense](http://unlicense.org/)
