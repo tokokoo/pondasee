@@ -5,6 +5,8 @@
 // Custom blueprint mixins
 // Remove float: left from 'column' mixins, no bloated anymore
 // ------------------
+@import "blueprint";
+
 @mixin container($margin: 0 auto) {
 	margin: $margin;
 	@include pie-clearfix;
