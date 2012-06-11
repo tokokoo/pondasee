@@ -2197,7 +2197,7 @@ Global and main styles
 .follow-button li {
   display: inline-block;
   *display: block;
-  width: 150px;
+  width: 125px;
   *zoom: 1;
 }
 
@@ -2222,14 +2222,9 @@ Global and main styles
 .site-footer {
   background: black;
   background: rgba(0, 0, 0, 0.3);
-  margin-bottom: 10px;
   padding: 40px 0;
 }
-
-.credits {
-  margin-bottom: 40px;
-}
-.credits p {
+.site-footer p {
   margin: 0;
 }
 
