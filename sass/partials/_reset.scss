@@ -36,10 +36,6 @@ audio:not([controls]),
     display: none;
 }
 
-html {
-    -ms-text-size-adjust: 100%;
-}
-
 a:focus {
 	@include tab-focus;
 }

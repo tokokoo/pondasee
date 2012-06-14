@@ -20,13 +20,16 @@
 	}
 	html {
 		font-size: $font-size;
-		@include adjust-leading-to(1, if($relative-font-sizing, $font-size, $base-font-size)); 
+		@include adjust-leading-to(1, if($relative-font-sizing, $font-size, $base-font-size));
+		overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+		-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+		-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+		-webkit-font-smoothing: antialiased; /* http://maxvoltar.com/archive/-Webkit-font-smoothing */
 	}
 	body {
 		background: $backgroundColor;
 		color: $fontColor;
 		@include ff-text;
-		text-rendering: optimizeLegibility;
-		-webkit-font-smoothing: antialiased;
+		text-rendering: optimizeLegibility; /* http://aestheticallyloyal.com/public/optimize-legibility/ */
 	}	
 }

@@ -85,6 +85,20 @@
     display: block;
 }
 
+/* 	QUICK FLOAT
+	----------------- */
+.fr { 
+	@include float(right);
+}
+
+.fl { 
+	@include float(left); 
+}
+
+.fn { 
+	@include reset-float; 
+}
+
 /* 	TEXT ALIGNMENT
 	----------------- */
 .left {

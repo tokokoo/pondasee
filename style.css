@@ -85,10 +85,6 @@ audio:not([controls]),
   display: none;
 }
 
-html {
-  -ms-text-size-adjust: 100%;
-}
-
 a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
@@ -143,6 +139,14 @@ Baseline, selection & links
 html {
   font-size: 16px;
   line-height: 1.5em;
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -webkit-font-smoothing: antialiased;
+  /* http://maxvoltar.com/archive/-Webkit-font-smoothing */
 }
 
 body {
@@ -150,7 +154,7 @@ body {
   color: #555555;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+  /* http://aestheticallyloyal.com/public/optimize-legibility/ */
 }
 
 /* 	SELECTION
@@ -2156,6 +2160,23 @@ List of helper classes (eg clearfix, alignment, etc)
 }
 
 .alignnone {
+  display: block;
+}
+
+/* 	QUICK FLOAT
+	----------------- */
+.fr {
+  display: inline;
+  float: right;
+}
+
+.fl {
+  display: inline;
+  float: left;
+}
+
+.fn {
+  float: none;
   display: block;
 }
 
