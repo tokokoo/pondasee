@@ -175,21 +175,27 @@ ol {
 	margin: 1em 0;
 	padding: 0 0 0 rhythm(1.5); 
 }
+
 ul {
 	list-style: disc;
 }
+
 ol {
 	list-style-type: decimal;
 }
+
 ol ol {
 	list-style: upper-alpha;
 }
+
 ol ol ol {
 	list-style: lower-roman;
 }
+
 ol ol ol ol {
 	list-style: lower-alpha;
 }
+
 li ul, 
 li ol {
 	margin: 0;
@@ -198,9 +204,11 @@ li ol {
 dl {
 	margin: 0 1.625em;
 }
+
 dt {
 	font-weight: bold;
 }
+
 dd {
 	margin-bottom: 1.625em;
 }

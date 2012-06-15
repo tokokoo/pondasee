@@ -3,7 +3,7 @@
 // =================================================================================
 
 // Custom blueprint mixins
-// Remove float: left from 'column' mixins, no bloated anymore
+// Remove float: left from 'column' mixins, no more bloated code
 // ------------------
 @import "blueprint";
 
@@ -32,72 +32,95 @@
 .col-1 {
 	@include column(1);
 }
+
 .col-2 {
 	@include column(2);
 }
+
 .col-3 {
 	@include column(3);
 }
+
 .col-4 {
 	@include column(4);
 }
+
 .col-5 {
 	@include column(5);
 }
+
 .col-6 {
 	@include column(6);
 }
+
 .col-7 {
 	@include column(7);
 }
+
 .col-8 {
 	@include column(8);
 }
+
 .col-9 {
 	@include column(9);
 }
+
 .col-10 {
 	@include column(10);
 }
+
 .col-11 {
 	@include column(11);
 }
+
 .col-12 {
 	@include column(12);
 }
+
 .col-13 {
 	@include column(13);
 }
+
 .col-14 {
 	@include column(14);
 }
+
 .col-15 {
 	@include column(15);
 }
+
 .col-16 {
 	@include column(16);
 }
+
 .col-17 {
 	@include column(17);
 }
+
 .col-18 {
 	@include column(18);
 }
+
 .col-19 {
 	@include column(19);
 }
+
 .col-20 {
 	@include column(20);
 }
+
 .col-21 {
 	@include column(21);
 }
+
 .col-22 {
 	@include column(22);
 }
+
 .col-23 {
 	@include column(23);
 }
+
 .col-24 {
 	@include column(24);
 	margin-right: 0;
