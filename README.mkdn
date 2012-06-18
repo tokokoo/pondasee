@@ -31,6 +31,11 @@ Pondasee is crafted and developed by [Tokokoo Team](http://tokokoo.com), feel fr
 * Source: [http://tokokoo.github.com/pondasee](http://tokokoo.github.com/pondasee)
 * Twitter: [@tokokoo](http://twitter.com/tokokoo)
 
+Requirement
+-------------------------
+* Compass 0.12.2.rc.0
+* SASS 3.2.0.alpha.237
+
 Components
 -------------------------
 
