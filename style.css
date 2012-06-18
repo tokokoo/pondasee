@@ -546,10 +546,6 @@ dd {
 - Font Awesome
 Font icons - http://fortawesome.github.com/Font-Awesome
 ============================================================================= */
-/*  Font Awesome
-	http://fortawesome.github.com/Font-Awesome
-    -------------------------------------------------------
-*/
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: FontAwesome;
