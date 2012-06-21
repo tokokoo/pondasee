@@ -3,9 +3,15 @@
 
 Pondasee is NOT a css framework, it is only our front-end starter kit combined with the power of SCSS & Compass to build a theme. If you want to use this project as your starting point, you need to know basic knowledge of [Compass](http://compass-style.org/) and [Sass](http://sass-lang.com/).
 
+Requirement
+-------------------------
+* Compass 0.12.2.rc.0
+* SASS 3.2.0.alpha.237
+
 Quick start
 -------------------------
 * Install Compass, you can read on compass official site, [here](http://compass-style.org/install/)
+* Or update your Compass to the latest(unreleased) version `gem install compass -v 0.12.2.rc.1 --pre`
 * Clone this project `git clone git://github.com/tokokoo/pondasee.git`
 * Or you can download the zip file [here](https://github.com/tokokoo/pondasee/zipball/master)
 * Compile `pondasee` project folder and you're ready to go! :D
@@ -30,11 +36,6 @@ Pondasee is crafted and developed by [Tokokoo Team](http://tokokoo.com), feel fr
 
 * Source: [http://tokokoo.github.com/pondasee](http://tokokoo.github.com/pondasee)
 * Twitter: [@tokokoo](http://twitter.com/tokokoo)
-
-Requirement
--------------------------
-* Compass 0.12.2.rc.0
-* SASS 3.2.0.alpha.237
 
 Components
 -------------------------
