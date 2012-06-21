@@ -27,6 +27,7 @@ What's inside ?
 * [Table](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_table.scss)
 * [Images](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_images.scss)
 * [Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_basic-buttons.scss)
+* [Extra][Zurb Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_zurb-button.scss)
 * [Helper Classes](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_utilities.scss)
 * [Helper Mixins](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_helper.scss)
 
@@ -40,14 +41,14 @@ Pondasee is crafted and developed by [Tokokoo Team](http://tokokoo.com), feel fr
 Components
 -------------------------
 
-* [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)	: The Unlicense
-* [Modernizr](https://github.com/Modernizr/Modernizr)				: MIT/BSD license
-* jQuery: MIT/GPL license
-* Normalize.css: Public Domain
-* Formalize: MIT/GPL license
-* Selectivizr: MIT license
-* NWmatcher: MIT license
-* Font Awesome: CC BY 3.0 license
+* [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate): The Unlicense
+* [Modernizr](https://github.com/Modernizr/Modernizr): MIT/BSD license
+* [jQuery](https://github.com/jquery/jquery): MIT/GPL license
+* [Normalize.css](https://github.com/necolas/normalize.css): Public Domain
+* [Formalize](https://github.com/nathansmith/formalize): MIT/GPL license
+* [Selectivizr](https://github.com/keithclark/selectivizr): MIT license
+* [NWmatcher](https://github.com/dperini/nwmatcher): MIT license
+* [Font Awesome](https://github.com/FortAwesome/Font-Awesome): CC BY 3.0 license
 
 Everything else
 -------------------------
