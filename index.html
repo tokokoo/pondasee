@@ -12,6 +12,8 @@
 	<title>Pondasee - Front-end Starter Kit</title>
 	<meta name="description" content="">
 	
+	<link rel="shortcut icon" href="">
+	
 	<link rel="stylesheet" href="style.css">
 	
 	<script src="js/vendor/modernizr-2.5.3.min.js"></script>
@@ -26,9 +28,14 @@
 	</header><!-- end #masthead .site-header -->
 	
 	<div id="main">
-		<div id="content" role="main">
+		<div id="content" class="site-content" role="main">
 		
-		</div><!-- end #content -->
+		</div><!-- end #content .site-content -->
+		
+		
+		<aside id="sidebar" class="widget-area" role="complementary">
+		
+		</aside><!-- end #sidebar .widget-area -->
 	</div><!-- end #main -->
 	
 	<footer id="colophon" class="site-footer" role="contentinfo">
@@ -38,9 +45,10 @@
 	
 </div><!-- end #page .hfeed -->
 
-	<!-- jQuery library -->
-	<script src="js/vendor/jquery-1.7.2.min.js"></script>
-
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+	
 	<!-- compressed and minified scripts -->
 	<script src="js/plugins.js"></script>
 	<script src="js/methods.js"></script>
