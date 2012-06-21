@@ -27,7 +27,7 @@ What's inside ?
 * [Table](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_table.scss)
 * [Images](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_images.scss)
 * [Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_basic-buttons.scss)
-* [Extra][Zurb Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_zurb-button.scss)
+* [Extra] [Zurb Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_zurb-button.scss)
 * [Helper Classes](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_utilities.scss)
 * [Helper Mixins](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_helper.scss)
 
