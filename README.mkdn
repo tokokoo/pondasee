@@ -40,8 +40,8 @@ Pondasee is crafted and developed by [Tokokoo Team](http://tokokoo.com), feel fr
 Components
 -------------------------
 
-* HTML5 Boilerplate: The Unlicense
-* Modernizr: MIT/BSD license
+* [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate)	: The Unlicense
+* [Modernizr](https://github.com/Modernizr/Modernizr)	: MIT/BSD license
 * jQuery: MIT/GPL license
 * Normalize.css: Public Domain
 * Formalize: MIT/GPL license
