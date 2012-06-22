@@ -19,6 +19,17 @@
 	*zoom: 1;
 }
 
+/* 	CLEAR ELEMENT
+	----------------- */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
 /* 	IMAGE REPLACEMENT
 	----------------- */
 .ir { 
