@@ -87,7 +87,7 @@ p img,
 	overflow: hidden;
 	width: 100%;
 	.gallery-item {
-		@include float-left;
+		@include float(left);
 		margin-bottom: 10px;
 		text-align: center; 
 	}
