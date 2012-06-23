@@ -2087,6 +2087,17 @@ List of helper classes (eg clearfix, alignment, etc)
   *zoom: 1;
 }
 
+/* 	CLEAR ELEMENT
+	----------------- */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 /* 	IMAGE REPLACEMENT
 	----------------- */
 .ir {
@@ -2124,8 +2135,7 @@ List of helper classes (eg clearfix, alignment, etc)
   width: 1px;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -2237,7 +2247,8 @@ hr.lightborder {
   padding-bottom: 0;
 }
 
-/* Text meant only for screen readers */
+/* 	Text meant only for screen readers
+	----------------- */
 .assistive-text {
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
