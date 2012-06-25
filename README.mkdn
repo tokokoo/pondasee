@@ -5,13 +5,13 @@ Pondasee is NOT a css framework, it is only our front-end starter kit combined w
 
 Requirement
 -------------------------
-* Compass 0.12.2.rc.0
+* Compass 0.12.2
 * SASS 3.2.0.alpha.237
 
 Quick start
 -------------------------
 * Install Compass, you can read on compass official site, [here](http://compass-style.org/install/)
-* Or update your Compass to the latest(unreleased) version `gem install compass -v 0.12.2.rc.1 --pre`
+* Or update your Compass to the latest version `gem install compass`
 * Clone this project `git clone git://github.com/tokokoo/pondasee.git`
 * Or you can download the zip file [here](https://github.com/tokokoo/pondasee/zipball/master)
 * Compile `pondasee` project folder and you're ready to go! :D
@@ -30,6 +30,7 @@ What's inside ?
 * [Extra] [Zurb Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_zurb-button.scss)
 * [Helper Classes](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_utilities.scss)
 * [Helper Mixins](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_helper.scss)
+* [Font Stack](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_variable.scss#L53)
 
 Project information
 -------------------------
