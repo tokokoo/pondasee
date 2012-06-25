@@ -1290,7 +1290,6 @@ textarea {
   -webkit-transition: all 0.2s linear;
   -webkit-transition-delay: 0s;
   -moz-transition: all 0.2s linear 0s;
-  -ms-transition: all 0.2s linear 0s;
   -o-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
@@ -1355,7 +1354,6 @@ input[type="button"] {
   background-image: -webkit-linear-gradient(#ffffff, #dddddd);
   background-image: -moz-linear-gradient(#ffffff, #dddddd);
   background-image: -o-linear-gradient(#ffffff, #dddddd);
-  background-image: -ms-linear-gradient(#ffffff, #dddddd);
   background-image: linear-gradient(#ffffff, #dddddd);
   border: 1px solid;
   border-color: #dddddd #bbbbbb #999999;
@@ -1371,7 +1369,6 @@ input[type="button"] {
   text-shadow: white 0 1px 1px;
   -webkit-transition: none;
   -moz-transition: none;
-  -ms-transition: none;
   -o-transition: none;
   transition: none;
   vertical-align: top;
@@ -1386,7 +1383,6 @@ input[type="button"]:hover {
   background-image: -webkit-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
   background-image: -moz-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
   background-image: -o-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: -ms-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
   background-image: linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
 }
 button:active,
@@ -1398,7 +1394,6 @@ input[type="button"]:active {
   background-image: -webkit-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   background-image: -moz-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   background-image: -o-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
-  background-image: -ms-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   background-image: linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
   -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
@@ -1669,7 +1664,6 @@ p img,
   padding: 15px 10px 10px;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
@@ -1958,11 +1952,11 @@ hr.lightborder {
 - Media Queries
 Styles for adaptive layouts
 ============================================================================= */
-/* desktop */
-/* ipad */
-/* tablet */
-/* iphone landscape */
-/* iphone portrait */
+/* iPad & Tablets*/
+/* Tablets Portrait & Big Smartphone Landscape */
+/* Smartphone Landscape */
+/* Smartphone */
+/* Featured Phone (rarely used since featured phone often doesn't support CSS3) */
 /* =============================================================================
 - Conditional IE class
 	Style for IE only

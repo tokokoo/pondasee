@@ -4,18 +4,60 @@
 // URL		: http://tokokoo.com
 // =================================================================================
 
-/* desktop */
+/* iPad & Tablets*/
 @media screen and (min-width: 768px) and (max-width: 959px) {}
 
-/* ipad */
-@media screen and (max-width: 767px) {}
+/* Tablets Portrait & Big Smartphone Landscape */
+@media screen and (min-width: 600px) and (max-width: 767px) {}
 
-/* tablet */
-@media screen and (max-width: 600px) {}
+/* Smartphone Landscape */
+@media screen and (min-width: 480px) and (max-width: 599px) {}
 
-/* iphone landscape */
-@media screen and (max-width: 480px) {}
+/* Smartphone */
+@media screen and (min-width: 320px) and (max-width: 479px) {}
 
 
-/* iphone portrait */
-@media screen and (max-width: 320px) {}
+/* Featured Phone (rarely used since featured phone often doesn't support CSS3) */
+@media screen and (max-width: 319px) {}
+
+
+
+// Be Prepared for SASS 3.2, embrace yourself! (or use it right now, if you already using SASS pre version)
+
+$query-big			: 959px;
+$query-bigMedium	: 767px;
+$query-medium		: 599px;
+$query-mediumSmall	: 479px;
+$query-small		: 319px;
+
+@mixin responsive($media) {
+	@if $media == ipad {
+		@media screen and (max-width:$query-big) { @content; }
+	}
+	@else if $media == tablet {
+		@media screen and (max-width:$bigMedium) { @content; }
+	}
+	@else if $media == smartphone {
+		@media screen and (max-width:$medium) { @content; }
+	}
+	@else if $media == phone {
+		@media screen and (max-width:$mediumSmall) { @content; }
+	}
+}
+
+//	How To Use It:
+//	.foo {
+//		float: left;
+//		width: 1000px;
+//	
+//		@include responsive(ipad) {
+//			float: none;
+//			width: 600px;
+//		}
+//		@include responsive(tablet) {
+//			width: 480px;
+//		}
+//		@include responsive(smartphone) {
+//			width: 280px;
+//		}
+//	}
