@@ -1,0 +1,35 @@
+// Mixins Collections
+// Feel free to customize this mixins collections
+// =================================================================================
+
+@import 'mixins/helper';
+@import 'mixins/basic-buttons';
+@import 'mixins/zurb-button';
+@import 'mixins/fonts';
+
+// Mixin for set up the baseline
+// Customize version from:
+// http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-establish-baseline
+// ------------------
+@mixin establish-baseline($font-size: $base-font-size) {
+	// IE 6 refuses to resize fonts set in pixels and it weirdly resizes fonts
+	// whose root is set in ems. So we set the root font size in percentages of
+	// the default font size.
+	* html {
+		font-size: 100% * ($font-size / $browser-default-font-size); 
+	}
+	html {
+		font-size: $font-size;
+		@include adjust-leading-to(1, if($relative-font-sizing, $font-size, $base-font-size));
+		overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+		-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+		-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+		-webkit-font-smoothing: antialiased; /* http://maxvoltar.com/archive/-Webkit-font-smoothing */
+	}
+	body {
+		background: $backgroundColor;
+		color: $fontColor;
+		@include ff-text;
+		text-rendering: optimizeLegibility; /* http://aestheticallyloyal.com/public/optimize-legibility/ */
+	}	
+}

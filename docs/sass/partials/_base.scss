@@ -1,0 +1,27 @@
+// Base styles
+// Setup your baseline, selection and links
+// =================================================================================
+
+@include establish-baseline(16px);
+
+/* 	SELECTION
+	----------------- */
+@include selection($black, $white);
+
+
+/* 	LINKS
+	----------------- */
+a {
+	color: $linkColor;
+	text-decoration: none;
+	&:visited {
+		color: $linkColor;
+	}
+	&:hover {
+		color: $linkHover;
+		text-decoration: none;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+}

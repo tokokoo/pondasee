@@ -1,0 +1,32 @@
+// Fonts & @font-face mixins
+// Feel free to customize it!
+// =================================================================================
+
+// Font awesome
+// ------------------
+@include font-face (
+	'FontAwesome',
+	font-files(
+		'fontawesome-webfont.woff', woff,
+		'fontawesome-webfont.ttf', truetype,
+		'fontawesome-webfont.otf', opentype,
+		'fontawesome-webfont.svg#FontAwesome', svg),
+	'fontawesome-webfont.eot',
+	normal,
+	normal
+);
+
+// Font mixins
+// ------------------
+@mixin ff-text {
+	font-family: $arial; // Basic & global font
+}
+@mixin ff-heading {
+	font-family: $arial; // Font only for all heading eg. h1, h2 etc
+}
+@mixin ff-decorative{
+	font-family: $cursive;
+}
+@mixin ff-mono{
+	font-family: $consolas;
+}

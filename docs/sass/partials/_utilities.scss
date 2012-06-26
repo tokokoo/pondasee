@@ -1,0 +1,185 @@
+// Utilities
+// Custom & helper classes
+// =================================================================================
+
+/* 	CLEARFIX
+	http://nicolasgallagher.com/micro-clearfix-hack/
+	----------------- */
+.clearfix:before, 
+.clearfix:after { 
+	content: ""; 
+	display: table; 
+}
+
+.clearfix:after { 
+	clear: both; 
+}
+
+.clearfix { 
+	*zoom: 1;
+}
+
+/* 	CLEAR ELEMENT
+	----------------- */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* 	IMAGE REPLACEMENT
+	----------------- */
+.ir { 
+	border:0; 
+	font: 0/0 a; 
+	text-shadow: none; 
+	color: transparent; 
+	background-color: transparent; 
+}
+
+/* 	HIDE/SHOW ELEMENT
+	----------------- */
+.hide { 
+	display: none; 
+	visibility: hidden; 
+}
+
+.show { 
+	display: block;
+	visibility: visible;
+}
+
+.invisible { 
+	visibility: hidden; 
+}
+
+.visuallyhidden { 
+	border: 0; 
+	clip: rect(0 0 0 0); 
+	height: 1px; 
+	margin: -1px; 
+	overflow: hidden; 
+	padding: 0; 
+	position: absolute; 
+	width: 1px; 
+}
+
+.visuallyhidden.focusable {
+	&:active,
+	&:focus {
+		clip: auto; 
+		height: auto;
+		margin: 0; 
+		overflow: visible; 
+		position: static; 
+		width: auto; 
+	}
+}
+
+/* 	FLOATING ALIGNMENT
+	----------------- */
+.alignleft {
+	@include float(left);
+	margin-right: rhythm(); // output 1.5em
+}
+
+.alignright {
+	@include float(right);
+	margin-left: rhythm(); // output 1.5em
+}
+
+.aligncenter {
+	clear: both;
+	@include center-block;
+}
+
+.alignnone{
+    display: block;
+}
+
+/* 	QUICK FLOAT
+	----------------- */
+.fr { 
+	@include float(right);
+}
+
+.fl { 
+	@include float(left); 
+}
+
+.fn { 
+	@include reset-float; 
+}
+
+/* 	TEXT ALIGNMENT
+	----------------- */
+.left {
+	text-align: left
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+/* 	HR/STANDALONE BORDER
+	----------------- */
+hr {
+	border-top: 1px solid $borderColor;
+	border-bottom: 0;
+	border-right: 0;
+	border-left: 0;
+	clear: both;
+	height: 1px;
+	margin: rhythm() 0;
+	min-height: 0;
+	
+	&.dotted {
+		border-style: dotted;
+	}
+	&.dashed {
+		border-style: dashed;
+	}
+	&.darkborder {
+		border-color: $black
+	}
+	&.lightborder {
+		border-color: $white;
+	}
+}
+
+/* 	MISC CLASSES
+	----------------- */
+.first { 
+	margin-left: 0; 
+	padding-left: 0; 
+}
+
+.last { 
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.top { 
+	margin-top: 0; 
+	padding-top: 0; 
+}
+
+.bottom { 
+	margin-bottom: 0; 
+	padding-bottom: 0; 
+}
+
+/* 	Text meant only for screen readers
+	----------------- */
+.assistive-text {
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
