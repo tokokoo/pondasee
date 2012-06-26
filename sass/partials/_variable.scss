@@ -60,47 +60,47 @@ $linkActive			: lighten(adjust-hue($linkColor, 75deg), 10%) !default;
 // Serif font-stacks
 // -------------------------
 
-$georgia-font-stack			: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif !default;
-$georgia-font-stack-heading	: Georgia, Times, "Times New Roman", serif !default;
-$garamond-font-stack		: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
-$lucida-bright-font-stack	: "Lucida Bright", Georgia, serif !default;
-$palatino-font-stack		: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !default;
-$big-caslon-font-stack		: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif !default;
-$didot-font-stack			: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !default;
-$baskerville-font-stack		: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif !default;
-$hoefler-text-font-stack	: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif !default;
-$bodoni-mt-font-stack		: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !default;
-$goudy-old-style-font-stack	: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif !default;
-$constantia-font-stack		: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif !default;
-$cambria-font-stack			: Cambria, Georgia, serif !default;
-$book-antiqua-font-stack	: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif !default;
-$times-font-stack			: Times, "Times New Roman", Georgia, serif !default;
+$georgia			: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif !default;
+$georgia-heading	: Georgia, Times, "Times New Roman", serif !default;
+$garamond			: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif !default;
+$lucida-bright		: "Lucida Bright", Georgia, serif !default;
+$palatino			: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif !default;
+$big-caslon			: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif !default;
+$didot				: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !default;
+$baskerville		: Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif !default;
+$hoefler-text		: "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif !default;
+$bodoni-mt			: "Bodoni MT", Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif !default;
+$goudy-old-style	: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif !default;
+$constantia			: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif !default;
+$cambria			: Cambria, Georgia, serif !default;
+$book-antiqua		: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif !default;
+$times				: Times, "Times New Roman", Georgia, serif !default;
 
 // Sans-Serif font-stacks
 // -------------------------
 
-$arial-font-stack			: Arial, "Helvetica Neue", Helvetica, sans-serif !default;
-$optima-font-stack			: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif !default;
-$futura-font-stack			: Futura, "Trebuchet MS", Arial, sans-serif !default;
-$gill-sans-font-stack		: "Gill Sans", "Gill Sans MT", Calibri, sans-serif !default;
-$trebuchet-font-stack		: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !default;
-$helvetica-font-stack		: "Helvetica Neue", Arial, Helvetica, sans-serif !default;
-$verdana-font-stack			: Verdana, Geneva, sans-serif !default;
-$lucida-grande-font-stack	: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !default;
-$geneva-font-stack			: Geneva, Tahoma, Verdana, sans-serif !default;
-$segoe-font-stack			: Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
-$candara-font-stack			: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !default;
-$calibri-font-stack			: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !default;
-$franklin-gothic-font-stack	: "Franklin Gothic Medium", Arial, sans-serif !default;
-$tahoma-font-stack			: Tahoma, Geneva, Verdana, sans-serif !default;
+$arial				: Arial, "Helvetica Neue", Helvetica, sans-serif !default;
+$optima				: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif !default;
+$futura				: Futura, "Trebuchet MS", Arial, sans-serif !default;
+$gill-sans			: "Gill Sans", "Gill Sans MT", Calibri, sans-serif !default;
+$trebuchet			: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif !default;
+$helvetica			: "Helvetica Neue", Arial, Helvetica, sans-serif !default;
+$verdana			: Verdana, Geneva, sans-serif !default;
+$lucida-grande		: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif !default;
+$geneva				: Geneva, Tahoma, Verdana, sans-serif !default;
+$segoe				: Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif !default;
+$candara			: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif !default;
+$calibri			: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif !default;
+$franklin-gothic	: "Franklin Gothic Medium", Arial, sans-serif !default;
+$tahoma				: Tahoma, Geneva, Verdana, sans-serif !default;
 
 // Monospace font-stacks
 // -------------------------
 
-$monospace-font-stack		: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
-$monospace-simple-font-stack: "andale mono", "lucida console", monospace !default;
-$consolas-font-stack		: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
+$monospace			: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
+$monospace-simple	: "andale mono", "lucida console", monospace !default;
+$consolas			: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
 
 // Cursive font-stacks
 // -------------------------
-$cursive-font-stack			: "Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive !default;
+$cursive			: "Bradley Hand ITC", "Apple Chancery", "URW Chancery L", cursive !default;

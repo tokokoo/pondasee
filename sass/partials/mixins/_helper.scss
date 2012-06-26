@@ -16,6 +16,14 @@
 	*zoom: 1;
 }
 
+// Mixin for simpler inline-block
+// ------------------
+@mixin inline-block-ie7 {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
 // Mixin for cross browser opacity
 // http://css3please.com/
 // ------------------

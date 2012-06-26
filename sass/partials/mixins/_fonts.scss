@@ -30,14 +30,14 @@
 // Font mixins
 // ------------------
 @mixin ff-text {
-	font-family: $arial-font-stack; // Basic & global font
+	font-family: $arial; // Basic & global font
 }
 @mixin ff-heading {
 	font-family: 'Museo300Regular'; // Font only for all heading eg. h1, h2 etc
 }
 @mixin ff-decorative{
-	font-family: $cursive-font-stack;
+	font-family: $cursive;
 }
 @mixin ff-mono{
-	font-family: $consolas-font-stack;
+	font-family: $consolas;
 }

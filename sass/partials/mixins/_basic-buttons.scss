@@ -2,11 +2,43 @@
 // Mixins to create a simple and basic buttons
 // Author	: Satrya - @msattt
 // URL		: http://tokokoo.com
+//
+// Standard Usage:
+// 
+// .btn {
+// 		@include button( #fff, #222 );
+// }
+//
+// Advanced Usage:
+// 
+// .btn {
+// 		@include button-struture( 5px, inline-block, 0 ); <-- button structure
+// }
+//
+// .btn.primary {
+//		@include button-base( #02b, #fff, true, true, dark ); <-- button color for primary button
+//	}
+// .btn.secondary {
+//		@include button-base( #fff, #333, true, true, light ); <-- button color for secondary button
+//	}
+//
+// .btn.small {
+//		@include button-size( 12px, 8px 18px  ); <-- small size button
+//	}
+// .btn.large {
+//		@include button-size( 20px, 14px 24px  ); <-- large size button
+//	}
+//
+// in your HTML, you can call like this
+// <p><a href="#" class="btn primary small">Button</a></p>
+// <p><a href="#" class="btn primary large">Button</a></p>
+// <p><a href="#" class="btn secondary small">Button</a></p>
+// <p><a href="#" class="btn secondary large">Button</a></p>
 // =================================================================================
 @import "compass/css3/user-interface";
 
-$default-border		: false !default;
-$default-shadow		: false !default;
+$default-border		: true !default;
+$default-shadow		: true !default;
 $default-text-shadow: light !default;
 $default-fsize		: 16px !default;
 $default-pad		: 14px 24px !default;
@@ -26,7 +58,7 @@ $default-margin		: 0 !default;
 	$display	: $default-display, 
 	$margin		: $default-margin 
 ) {
-	@include button-base( $bg-color, $color, $border, $shadow );
+	@include button-base( $bg-color, $color, $border, $shadow, $text-shad );
 	@include button-size( $fsize, $pad  );
 	@include button-struture( $radius, $display, $margin );
 }
@@ -38,11 +70,11 @@ $default-margin		: 0 !default;
 	$shadow		: $default-shadow, 
 	$text-shad	: $default-text-shadow 
 ) {
-	$dark-color: darken($bg-color, 10%);
-	$border-color: darken($bg-color, 15%);
-	$text-shadow-color: darken($bg-color, 20%);
+	$dark-color			: darken($bg-color, 5%);
+	$border-color		: darken($bg-color, 10%);
+	$text-shadow-color	: darken($bg-color, 20%);
 	
-	background-color: $bg-color;
+	background: $bg-color;
 	@include background-image( linear-gradient( $bg-color, $dark-color) );
 	@if $border == true {
 		border: 1px solid $border-color;
@@ -60,15 +92,17 @@ $default-margin		: 0 !default;
 		@include text-shadow( $text-shadow-color 0 -1px 0 );
 	}
 	
-	
 	&:hover, 
 	&:focus {
 		background: darken($bg-color, 5%);
 		color: $color;
 	}
-	
+	&:visited {
+		color: $color;
+	}
 	&:active {
-		@include single-box-shadow( rgba($black, .5), 0, 0, 8px, 0, true );
+		@include single-box-shadow( rgba($black, .2), 0, 0, 3px, 0, true );
+		outline: 0;
 	}
 }
 

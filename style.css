@@ -1567,7 +1567,6 @@ textarea {
   -webkit-transition: all 0.2s linear;
   -webkit-transition-delay: 0s;
   -moz-transition: all 0.2s linear 0s;
-  -ms-transition: all 0.2s linear 0s;
   -o-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
@@ -1632,7 +1631,6 @@ input[type="button"] {
   background-image: -webkit-linear-gradient(#ffffff, #dddddd);
   background-image: -moz-linear-gradient(#ffffff, #dddddd);
   background-image: -o-linear-gradient(#ffffff, #dddddd);
-  background-image: -ms-linear-gradient(#ffffff, #dddddd);
   background-image: linear-gradient(#ffffff, #dddddd);
   border: 1px solid;
   border-color: #dddddd #bbbbbb #999999;
@@ -1648,7 +1646,6 @@ input[type="button"] {
   text-shadow: white 0 1px 1px;
   -webkit-transition: none;
   -moz-transition: none;
-  -ms-transition: none;
   -o-transition: none;
   transition: none;
   vertical-align: top;
@@ -1663,7 +1660,6 @@ input[type="button"]:hover {
   background-image: -webkit-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
   background-image: -moz-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
   background-image: -o-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
-  background-image: -ms-linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
   background-image: linear-gradient(#ffffff, #eeeeee 1px, #cccccc);
 }
 button:active,
@@ -1675,7 +1671,6 @@ input[type="button"]:active {
   background-image: -webkit-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   background-image: -moz-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   background-image: -o-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
-  background-image: -ms-linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   background-image: linear-gradient(#ffffff, #dddddd 1px, #eeeeee);
   -webkit-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
   -moz-box-shadow: inset rgba(0, 0, 0, 0.25) 0 1px 2px 0;
@@ -1946,7 +1941,6 @@ p img,
   padding: 15px 10px 10px;
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
-  -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
@@ -2143,13 +2137,12 @@ Global and main styles
   font-family: 'Museo300Regular';
 }
 .btn.view {
-  background-color: #c14c4f;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c14c4f), color-stop(100%, #a2383b));
-  background-image: -webkit-linear-gradient(#c14c4f, #a2383b);
-  background-image: -moz-linear-gradient(#c14c4f, #a2383b);
-  background-image: -o-linear-gradient(#c14c4f, #a2383b);
-  background-image: -ms-linear-gradient(#c14c4f, #a2383b);
-  background-image: linear-gradient(#c14c4f, #a2383b);
+  background: #c14c4f;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c14c4f), color-stop(100%, #b53f42));
+  background-image: -webkit-linear-gradient(#c14c4f, #b53f42);
+  background-image: -moz-linear-gradient(#c14c4f, #b53f42);
+  background-image: -o-linear-gradient(#c14c4f, #b53f42);
+  background-image: linear-gradient(#c14c4f, #b53f42);
   color: white;
   text-shadow: #7c2b2d 0 -1px 0;
   margin-right: 20px;
@@ -2158,19 +2151,22 @@ Global and main styles
   background: #b53f42;
   color: white;
 }
+.btn.view:visited {
+  color: white;
+}
 .btn.view:active {
-  -webkit-box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  outline: 0;
 }
 .btn.dl {
-  background-color: white;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
-  background-image: -webkit-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -moz-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -o-linear-gradient(#ffffff, #e6e6e6);
-  background-image: -ms-linear-gradient(#ffffff, #e6e6e6);
-  background-image: linear-gradient(#ffffff, #e6e6e6);
+  background: white;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+  background-image: -webkit-linear-gradient(#ffffff, #f2f2f2);
+  background-image: -moz-linear-gradient(#ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(#ffffff, #f2f2f2);
+  background-image: linear-gradient(#ffffff, #f2f2f2);
   color: #333333;
   text-shadow: white 0 1px 1px;
 }
@@ -2178,10 +2174,14 @@ Global and main styles
   background: #f2f2f2;
   color: #333333;
 }
+.btn.dl:visited {
+  color: #333333;
+}
 .btn.dl:active {
-  -webkit-box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  outline: 0;
 }
 
 .follow-button {

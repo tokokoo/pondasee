@@ -114,7 +114,7 @@ code,
 kbd, 
 samp,
 tt { 
-	font-family: $consolas-font-stack;
+	font-family: $consolas;
 }
 
 ins { 
@@ -133,7 +133,7 @@ blockquote {
 	border-left: 3px solid $grayLighter;
 	color: $grayDark;
 	font-style: italic;
-	font-family: $georgia-font-stack;
+	font-family: $georgia;
 	margin: 1em 40px; 
 	padding-left: rhythm(.9);
 	
