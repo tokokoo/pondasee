@@ -66,6 +66,9 @@ $hide-text-direction: right;
 		*display: block;
 		width: 125px;
 		*zoom: 1;
+		&.plusone {
+			margin-left: 40px;
+		}
 	}
 }
 

@@ -2198,6 +2198,9 @@ Global and main styles
   width: 125px;
   *zoom: 1;
 }
+.follow-button li.plusone {
+  margin-left: 40px;
+}
 
 .presentation h2 {
   font-size: 30px;
