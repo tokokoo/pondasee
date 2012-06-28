@@ -74,6 +74,7 @@
 
 .site-content {
 	margin: 0 0 0 27em;
+	position: absolute; // for firefox
 	.inside-content {
 		margin-top: 2.5em;
 	}
@@ -96,4 +97,8 @@ a[rel="source-code"] {
 hr.separator {
 	border-top: 1px solid #ddd;
 	@include single-box-shadow( lighten(#ddd, 10%), 0, 1px, 0, 0, false );
+}
+
+#main {
+	position: relative;
 }

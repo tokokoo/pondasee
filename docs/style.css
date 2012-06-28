@@ -342,7 +342,6 @@ Headings, text element, lists, code, and more
 h1, h2, h3, h4, h5, h6 {
   color: #ac4548;
   font-family: 'Museo500Regular';
-  font-weight: bold;
   text-shadow: 0 1px 0 white;
 }
 
@@ -457,7 +456,7 @@ code {
   color: #990;
   font-size: 11px;
   line-height: 1.2em;
-  padding: 0.3em;
+  padding: .1em;
 }
 
 pre,
@@ -2165,6 +2164,7 @@ Global and main styles
 
 .site-content {
   margin: 0 0 0 27em;
+  position: absolute;
 }
 .site-content .inside-content {
   margin-top: 2.5em;
@@ -2190,6 +2190,10 @@ hr.separator {
   -webkit-box-shadow: 0 1px 0 0 #f7f7f7;
   -moz-box-shadow: 0 1px 0 0 #f7f7f7;
   box-shadow: 0 1px 0 0 #f7f7f7;
+}
+
+#main {
+  position: relative;
 }
 
 /* =============================================================================

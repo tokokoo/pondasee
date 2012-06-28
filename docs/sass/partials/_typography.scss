@@ -7,7 +7,6 @@
 #{headings(all)} {
 	color: $red;
 	@include ff-heading;
-	font-weight: bold;
 	@include text-shadow( 0 1px 0 #fff );
 }
 
@@ -113,7 +112,7 @@ code {
 	color: #990;
 	font-size: 11px;
 	line-height: 1.2em;
-	padding: rhythm(.2);
+	padding: .1em;
 }
 
 pre, 
