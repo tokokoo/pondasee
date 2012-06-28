@@ -1,0 +1,56 @@
+// Fonts & @font-face mixins
+// Feel free to customize it!
+// =================================================================================
+
+// Font awesome
+// ------------------
+@include font-face (
+	'FontAwesome',
+	font-files(
+		'fontawesome-webfont.woff', woff,
+		'fontawesome-webfont.ttf', truetype,
+		'fontawesome-webfont.svg#FontAwesome', svg),
+	'fontawesome-webfont.eot',
+	normal,
+	normal
+);
+
+@include font-face (
+	'Museo500Regular',
+	font-files(
+		'Museo500-Regular-webfont.svg#Museo500Regular', svg,
+		'Museo500-Regular-webfont.woff', woff,
+		'Museo500-Regular-webfont.ttf', truetype),
+	'Museo500-Regular-webfont.eot',
+	normal,
+	normal
+);
+
+@include font-face (
+	'LatoRegular',
+	font-files(
+		'Lato-Regular-webfont.svg#LatoRegular', svg,
+		'Lato-Regular-webfont.woff', woff,
+		'Lato-Regular-webfont.ttf', truetype),
+	'Lato-Regular-webfont.eot',
+	normal,
+	normal
+);
+
+// Font mixins
+// ------------------
+@mixin ff-text {
+	font-family: 'LatoRegular', $arial; // Basic & global font
+}
+@mixin ff-heading {
+	font-family: 'Museo500Regular'; // Font only for all heading eg. h1, h2 etc
+}
+@mixin ff-decorative{
+	font-family: $cursive;
+}
+@mixin ff-mono{
+	font-family: $consolas;
+}
+@mixin ff-museo {
+	font-family: 'Museo500Regular';
+}

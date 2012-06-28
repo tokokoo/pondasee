@@ -1,0 +1,99 @@
+// Main styles
+// You can write your main styles(eg: content, article etc) here
+// Or you can separate this main file into several files(eg: header.scss, footer.scss etc)
+// =================================================================================
+.widget-area {
+	@include background( #2a323a image-url('bg-pattern.png') repeat left center );
+	@include background(
+		image-url('bg-pattern.png') repeat left center,
+		image-url('bg-img.png') repeat left center
+	);
+	border-right: 10px solid rgba($black, .15);
+	position: fixed;
+	.inside {
+		
+	}
+}
+
+.site-header {
+	display: block;
+	margin: 30px 10px 40px;
+	h1 {
+		border: none;
+		@include replace-text( 'pondasee-logo.png' );
+		height: 44px;
+		margin-bottom: 30px;
+		a {
+			display: block;
+		}
+	}
+}
+
+.control {
+	@include ff-museo;
+	font-size: 18px;
+	@include float(right);
+	list-style: none;
+	margin: 0 -10px 0;
+	padding: 0;
+	li {
+		margin-bottom: 10px;
+		&.active,
+		&:active,
+		&.ui-state-active {
+			a {
+				background-color: $backgroundColor;
+				@include border-radius(5px 0 0 5px);
+				color: #333;
+				&:visited {
+					color: #333;
+				}
+			}
+		}
+		a {
+			@include border-radius(5px 0 0 5px);
+			color: $white;
+			display: block;
+			padding: 15px;
+			@include single-transition( all, .2s, ease-in, 0s );
+			&:visited {
+				color: $white;
+			}
+			&:hover {
+				background-color: $backgroundColor;
+				@include border-radius(5px 0 0 5px);
+				color: #333;
+			}
+		}
+	}
+}
+
+.ui-tabs .ui-tabs-hide {
+	display: none !important;
+}
+
+.site-content {
+	margin: 0 0 0 27em;
+	.inside-content {
+		margin-top: 2.5em;
+	}
+}
+
+a[rel="source-code"] {
+	font-size: 11px;
+	@include float(right);
+	position: relative;
+	top: 1.5em;
+}
+
+.subheading {
+	color: $grayDarker;
+	@include ff-text;
+	font-weight: normal;
+	line-height: 1.3em;
+}
+
+hr.separator {
+	border-top: 1px solid #ddd;
+	@include single-box-shadow( lighten(#ddd, 10%), 0, 1px, 0, 0, false );
+}
