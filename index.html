@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if IE 7]>    <html itemscope itemtype="http://schema.org/Product" class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html itemscope itemtype="http://schema.org/Product" class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html itemscope itemtype="http://schema.org/Product" class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,11 +9,19 @@
 	
 	<title>Pondasee - Front-end Starter Kit</title>
 	<meta name="description" content="Pondasee is front-end starter kit to speed up front-end workflow.">
+	<meta itemprop="name" content="Pondasee - Front-end starter kit">
+	<meta itemprop="description" content="pondasee is front-end starter kit combined with the power of SCSS and Compass">
 	
 	<link rel="stylesheet" href="style.css">
 	
 	<script src="js/vendor/modernizr-2.5.3.min.js"></script>
-
+	<script type="text/javascript">
+		(function() {
+			var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			po.src = 'https://apis.google.com/js/plusone.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		})();
+	</script>
 </head>
 <body>
 	
@@ -39,6 +47,7 @@
   allowtransparency="true" frameborder="0" scrolling="0" width="62px" height="20px"></iframe></li>
 				<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="tokokoo" data-hashtags="pondasee">Tweet</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+				<li><g:plusone annotation="inline" width="125" href="http://tokokoo.github.com/pondasee/"></g:plusone></li>
 				<li><a href="https://twitter.com/tokokoo" class="twitter-follow-button" data-show-count="false">Follow @tokokoo</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
 			</ul>
