@@ -198,7 +198,7 @@ a:visited {
 }
 a:hover {
   color: #00baff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
@@ -222,6 +222,10 @@ Grid basic, based on blueprint css framewrok
   content: "";
   display: table;
   clear: both;
+}
+
+.row {
+  width: 100%;
 }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17, .col-18, .col-19, .col-20, .col-21, .col-22, .col-23, .col-24 {
@@ -2156,6 +2160,7 @@ Global and main styles
   -o-border-radius: 5px 0 0 5px;
   border-radius: 5px 0 0 5px;
   color: #333;
+  text-decoration: none;
 }
 
 .ui-tabs .ui-tabs-hide {
@@ -2175,7 +2180,7 @@ a[rel="source-code"] {
   display: inline;
   float: right;
   position: relative;
-  top: 1.5em;
+  top: .7em;
 }
 
 .subheading {
@@ -2204,16 +2209,20 @@ List of helper classes (eg clearfix, alignment, etc)
 	http://nicolasgallagher.com/micro-clearfix-hack/
 	----------------- */
 .clearfix:before,
-.clearfix:after {
+.clearfix:after,
+.row:before,
+.row:after {
   content: "";
   display: table;
 }
 
-.clearfix:after {
+.clearfix:after,
+.row:after {
   clear: both;
 }
 
-.clearfix {
+.clearfix,
+.row {
   *zoom: 1;
 }
 

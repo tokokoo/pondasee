@@ -19,7 +19,7 @@ a {
 	}
 	&:hover {
 		color: $linkHover;
-		text-decoration: none;
+		text-decoration: underline;
 	}
 	&:focus {
 		outline: thin dotted;

@@ -6,16 +6,20 @@
 	http://nicolasgallagher.com/micro-clearfix-hack/
 	----------------- */
 .clearfix:before, 
-.clearfix:after { 
+.clearfix:after,
+.row:before, 
+.row:after { 
 	content: ""; 
 	display: table; 
 }
 
-.clearfix:after { 
+.clearfix:after,
+.row:after { 
 	clear: both; 
 }
 
-.clearfix { 
+.clearfix,
+.row { 
 	*zoom: 1;
 }
 

@@ -63,6 +63,7 @@
 				background-color: $backgroundColor;
 				@include border-radius(5px 0 0 5px);
 				color: #333;
+				text-decoration: none;
 			}
 		}
 	}
@@ -84,7 +85,7 @@ a[rel="source-code"] {
 	font-size: 11px;
 	@include float(right);
 	position: relative;
-	top: 1.5em;
+	top: .7em;
 }
 
 .subheading {
