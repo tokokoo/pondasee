@@ -100,6 +100,51 @@ hr.separator {
 	@include single-box-shadow( lighten(#ddd, 10%), 0, 1px, 0, 0, false );
 }
 
+h3.line {
+	border-bottom: 1px solid #ddd;
+	@include single-box-shadow( lighten(#ddd, 10%), 0, 1px, 0, 0, false );
+	margin-bottom: 1em;
+}
+
 #main {
 	position: relative;
+}
+
+/* Buttons */
+// Basic button
+.btn {
+ 	@include button( #fff, #333 );
+}
+
+// Button with blue background color
+.blue {
+	@include button-base( #2d48c0, #fff, true, dark );
+}
+
+// Button with black background color
+.black {
+	@include button-base( #333, #fff, true, dark );
+}
+
+// Button with green background color
+.green {
+	@include button-base( #0fdb30, #fff, true, dark ); 
+}
+
+// Button with small size
+.small {
+	@include button-size( 13px, 8px 18px  );
+}
+
+// Button with large size
+.large {
+	@include button-size( 24px, 18px 35px );
+}
+
+.mg {
+	margin-right: 20px;
+}
+
+.gist {
+	margin-bottom: 3.5em;
 }

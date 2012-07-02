@@ -3,42 +3,50 @@
 // Author	: Satrya - @msattt
 // URL		: http://tokokoo.com
 //
-// Standard Usage:
-// 
+// Usage:
+//
+// Basic button
 // .btn {
-// 		@include button( #fff, #222 );
+// 		@include button( #fff, #333 );
 // }
 //
-// Advanced Usage:
-// 
-// .btn {
-// 		@include button-struture( 5px, inline-block, 0 ); <-- button structure
+// Button with blue background color
+// .blue {
+//		@include button-base( #2d48c0, #fff, true, dark );
 // }
 //
-// .btn.primary {
-//		@include button-base( #02b, #fff, true, true, dark ); <-- button color for primary button
-//	}
-// .btn.secondary {
-//		@include button-base( #fff, #333, true, true, light ); <-- button color for secondary button
-//	}
+// Button with black background color
+// .black {
+//		@include button-base( #333, #fff, true, dark );
+// }
 //
-// .btn.small {
-//		@include button-size( 12px, 8px 18px  ); <-- small size button
-//	}
-// .btn.large {
-//		@include button-size( 20px, 14px 24px  ); <-- large size button
-//	}
+// Button with green background color
+// .green {
+//		@include button-base( #0fdb30, #fff, true, dark ); 
+// }
 //
-// in your HTML, you can call like this
-// <p><a href="#" class="btn primary small">Button</a></p>
-// <p><a href="#" class="btn primary large">Button</a></p>
-// <p><a href="#" class="btn secondary small">Button</a></p>
-// <p><a href="#" class="btn secondary large">Button</a></p>
+// Button with small size
+// .small {
+//		@include button-size( 13px, 8px 18px  );
+// }
+//
+// Button with large size
+// .large {
+//		@include button-size( 24px, 18px 35px );
+// }
+//
+// in your HTML, you can call like this:
+//
+// <a class="btn" href="#">Button</a>
+// <a class="btn blue" href="#">Button</a>
+// <a class="btn black" href="#">Button</a>
+// <a class="btn green" href="#">Button</a>
+// <a class="btn black small" href="#">Button</a>
+// <a class="btn green large" href="#">Button</a>
 // =================================================================================
 @import "compass/css3/user-interface";
 
 $default-border		: true !default;
-$default-shadow		: true !default;
 $default-text-shadow: light !default;
 $default-fsize		: 16px !default;
 $default-pad		: 14px 24px !default;
@@ -46,11 +54,11 @@ $default-radius		: 3px !default;
 $default-display	: "inline-block" !default;
 $default-margin		: 0 !default;
 
+// Quick use
 @mixin button( 
 	$bg-color, 
 	$color, 
-	$border		: $default-border, 
-	$shadow		: $default-shadow, 
+	$border		: $default-border,
 	$text-shad	: $default-text-shadow, 
 	$fsize		: $default-fsize, 
 	$pad		: $default-pad, 
@@ -58,32 +66,27 @@ $default-margin		: 0 !default;
 	$display	: $default-display, 
 	$margin		: $default-margin 
 ) {
-	@include button-base( $bg-color, $color, $border, $shadow, $text-shad );
+	@include button-base( $bg-color, $color, $border, $text-shad );
 	@include button-size( $fsize, $pad  );
 	@include button-struture( $radius, $display, $margin );
 }
 
+// Button base
+// Background color, text color, border, text shadow
 @mixin button-base( 
 	$bg-color, 
 	$color, 
-	$border		: $default-border, 
-	$shadow		: $default-shadow, 
+	$border		: $default-border,
 	$text-shad	: $default-text-shadow 
 ) {
 	$dark-color			: darken($bg-color, 5%);
 	$border-color		: darken($bg-color, 10%);
-	$text-shadow-color	: darken($bg-color, 20%);
+	$text-shadow-color	: darken($bg-color, 10%);
 	
 	background: $bg-color;
 	@include background-image( linear-gradient( $bg-color, $dark-color) );
 	@if $border == true {
 		border: 1px solid $border-color;
-	}
-	@if $shadow == true {
-		@include box-shadow(
-			inset 0 1px 0 rgba($white, .2), 
-			0 1px 2px rgba($black, .05)
-		);
 	}
 	color: $color;
 	@if $text-shad == light {
@@ -100,12 +103,11 @@ $default-margin		: 0 !default;
 	&:visited {
 		color: $color;
 	}
-	&:active {
-		@include single-box-shadow( rgba($black, .2), 0, 0, 3px, 0, true );
-		outline: 0;
-	}
+	
 }
 
+// Button size
+// Font size, padding
 @mixin button-size( 
 	$fsize	: $default-fsize, 
 	$pad	: $default-pad 
@@ -114,26 +116,43 @@ $default-margin		: 0 !default;
 	padding: $pad;
 }
 
+// Button structure
+// border-radius, display, margin
 @mixin button-struture( 
 	$radius		: $default-radius, 
 	$display	: $default-display, 
 	$margin		: $default-margin 
 ) {
 	@include border-radius( $radius );
+	@include box-shadow(
+		inset 0 1px 0 rgba($white, .2), 
+		0 1px 2px rgba($black, .05)
+	);
 	cursor: pointer;
+	
 	@if $display == "inline-block" {
-		display: inline-block;
-		*display: inline;
-		*zoom: 1;
+		@include inline-block-ie7;
 	} @if $display == "inline" {
 		display: inline;
 	} @if $display == "block" {
 		display: block;
 	}
+	
 	font-weight: normal;
 	line-height: 1;
 	margin: $margin;
 	position: relative;
 	text-decoration: none;
 	@include user-select( none );
+	
+	&:hover, 
+	&:focus {
+		text-decoration: none;
+	}
+	
+	&:active {
+		@include single-box-shadow( rgba($black, .15), 0, 2px, 3px, 0, true );
+		outline: 0;
+	}
+	
 }
