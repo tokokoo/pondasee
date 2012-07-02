@@ -28,6 +28,8 @@ Author URI:		http://tokokoo.com
 		Global and main styles
 	- Utilities
 		List of helper classes (eg clearfix, alignment, etc)
+	- Plugins
+		Available plugins (eg slider, tooltip, lightbox, etc)
 	- Media Queries
 		Styles for responsive layouts
 	- Conditional IE class
@@ -1473,8 +1475,6 @@ legend {
   border: 1px solid #dddddd;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
   font-weight: bold;
   display: block;
@@ -1551,8 +1551,6 @@ input,
 textarea {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.075);
@@ -1613,8 +1611,6 @@ input[type="button"] {
   -webkit-appearance: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
@@ -1706,8 +1702,6 @@ input[type="week"] {
   background-clip: padding-box;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   border-radius: 0;
   -webkit-appearance: none;
   background-color: white;
@@ -2250,6 +2244,10 @@ hr.lightborder {
   position: absolute !important;
 }
 
+/* =============================================================================
+- Plugins
+Available plugins (eg slider, tooltip, lightbox)
+============================================================================= */
 /* =============================================================================
 - Media Queries
 Styles for responsive layouts

@@ -30,6 +30,8 @@ Author URI:		http://tokokoo.com
 		Global and main styles
 	- Utilities
 		List of helper classes (eg clearfix, alignment, etc)
+	- Plugins
+		Available plugins (eg slider, tooltip, lightbox, etc)
 	- Media Queries
 		Styles for responsive layouts
 	- Conditional IE class
@@ -100,6 +102,12 @@ Global and main styles
 List of helper classes (eg clearfix, alignment, etc)
 ============================================================================= */
 @import "partials/utilities";
+
+/* =============================================================================
+- Plugins
+Available plugins (eg slider, tooltip, lightbox)
+============================================================================= */
+@import "partials/plugins";
 
 /* =============================================================================
 - Media Queries
