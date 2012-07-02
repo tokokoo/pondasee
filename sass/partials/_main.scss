@@ -2,3 +2,11 @@
 // You can write your main styles(eg: content, article etc) here
 // Or you can separate this main file into several files(eg: header.scss, footer.scss etc)
 // =================================================================================
+
+/*
+ * Sample seperate main styles
+ * See 'main' Folder
+ */
+@import "main/header";
+@import "main/menus";
+@import "main/footer";

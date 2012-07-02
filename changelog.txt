@@ -1,2 +1,8 @@
-0.1 - June 12, 2012
+1.5 - Beta
+ * Update basic button mixin
+ * Update media queries
+ * Docs
+ * Adapt twitter bootstrap form style
+ 
+1.0 - June 12, 2012
  * Released

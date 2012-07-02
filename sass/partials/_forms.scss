@@ -21,7 +21,7 @@ fieldset {
 legend {
 	background: $whiteDark;
 	border: 1px solid $grayLight;
-	@include border-radius(5px);
+	@include border-radius;
 	font-weight: bold;
 	display: block;
 	left: 0;
@@ -105,15 +105,7 @@ input,
 textarea {
 	// Add blue glow.
 	@include border-radius(3px);
-	@include single-box-shadow( rgba($black, .075), 0, 1px, 1px, 0, true );
 	@include single-transition(all, .2s, linear, 0s);
-	&:focus {
-		border-color: rgba(82,168,236,.8);
-		outline: 0;
-		outline: thin dotted \9; /* IE6-9 */
-		$shadow: inset 0 1px 1px rgba($black, .075), 0 0 8px rgba(82,168,236,.6);
-		@include box-shadow($shadow);
-	}
   // Suppress red glow that Firefox
   // adds to form fields by default.
 	&:invalid {
@@ -149,12 +141,11 @@ input[type="reset"],
 input[type="submit"],
 input[type="button"] {
 	-webkit-appearance: none;
-	@include border-radius(4px);
+	@include border-radius(3px);
 	@include background-clip(padding-box);
-	background: $grayLight image-url('button.png') repeat-x;
-	@include background-image(linear-gradient($white, $grayLight));
-	border: 1px solid;
-	border-color: $grayLight #bbbbbb $grayDarker;
+	background: darken($white, 5%) image-url('button.png') repeat-x;
+	@include background-image(linear-gradient($white, darken($white, 5%)));
+	border: 1px solid darken($white, 10%);
 	cursor: pointer;
 	color: #333333;
 	// Helvetica Neue present, because it works better
@@ -163,7 +154,7 @@ input[type="button"] {
 	outline: 0;
 	overflow: visible;
 	margin: 0;
-	padding: 3px 10px;
+	padding: 10px 20px;
 	// IE7
 	*padding-top: 2px;
 	*padding-bottom: 0;
@@ -174,14 +165,12 @@ input[type="button"] {
 	vertical-align: top;
 	width: auto;
 	&:hover {
-		background: $grayLighter;
-		@include background-image(linear-gradient($white, $grayLighter 1px, $gray)); 
+		background: $white;
+		@include background-image(linear-gradient(darken($white, 5%), $white));
 	}
 	&:active {
-		background: $grayLight;
-		@include background-image(linear-gradient($white, $grayLight 1px, $grayLighter));
-		@include box-shadow(inset rgba($black, 0.25) 0 1px 2px 0);
-		border-color: $grayDarker #bbbbbb $grayLight; 
+		@include single-box-shadow( rgba($black, .15), 0, 2px, 3px, 0, true );
+		outline: 0;
 	}
 		
 	&::-moz-focus-inner {
@@ -213,11 +202,12 @@ input[type="url"],
 input[type="week"] {
 	@include box-sizing(border-box);
 	@include background-clip(padding-box);
-	@include border-radius(0);
+	@include border-radius(3px);
+	@include single-box-shadow( rgba($black, 0.075), 0, 1px, 1px, 0, true );
 	-webkit-appearance: none;
 	background-color: $white;
 	border: 1px solid;
-	border-color: $grayLight;
+	border-color: $gray;
 	color: $black;
 	outline: 0;
 	margin: 0;
@@ -235,7 +225,16 @@ input[type="week"] {
 	*height: auto;
 	&[disabled] {
 		background-color: $grayLighter; 
-	} 
+	}
+	&:focus {
+		border-color: rgba(82,168,236,.8);
+		outline: 0;
+		outline: thin dotted \9; /* IE6-9 */
+		@include box-shadow(
+			inset 0 1px 1px rgba($black, .075), 
+			0 0 8px rgba(82,168,236,.6)
+		);
+	}
 }
 
 button[disabled],

@@ -1,0 +1,12 @@
+// Menu style
+// Sample menu style
+// =================================================================================
+
+/*
+ * Menu style
+ */
+.main-navigation {
+	ul {
+		@include reset-list;
+	}
+}
