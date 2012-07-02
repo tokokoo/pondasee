@@ -77,7 +77,7 @@
 				<div id="typography" class="typography">
 					<a href="https://github.com/tokokoo/pondasee/blob/master/sass/partials/_typography.scss" rel="source-code" title="view source for this module on github">Source on Github</a>
 					<h2 class="heading">Typography</h2>
-					<h4 class="subheading">Pondasee built with basic global typography</h4>
+					<h4 class="subheading">These are the basic elements of typography in Pondasee</h4>
 					<hr class="separator">
 					
 					<div class="row">
@@ -108,7 +108,7 @@
 								<li><code>&lt;h1&gt;Sample Code&lt;/h1&gt;</code></li>
 								<li><mark>Highlighted Text</mark></li>
 								<li><ins>Inserted Text</ins></li>
-							<ul>
+							</ul>
 						</div>
 						
 						<div class="col-10 last">
@@ -199,7 +199,7 @@
 				<div id="form" class="form">
 					<a href="https://github.com/tokokoo/pondasee/blob/master/sass/partials/_forms.scss" rel="source-code" title="view source for this module on github">Source on Github</a>
 					<h2 class="heading">Form</h2>
-					<h4 class="subheading">Basic and global style for form base on Formalize</h4>
+					<h4 class="subheading">These are the basic elements of form style</h4>
 					<hr class="separator">
 					
 					<div class="row">
@@ -209,43 +209,35 @@
 								<fieldset>
 									<legend>Basic Form</legend>
 									<p>
-										<label for="inputtiny">Input Tiny</label><br>
-										<input type="text" class="input-tiny" name="input-tiny" id="input-tiny" placeholder="Sample input tiny">
+										<input type="text" class="input-tiny" name="input-tiny" id="input-tiny" placeholder=".input-tiny">
 									</p>
 
 									<p>
-										<label for="inputsmall">Input Small</label><br>
-										<input type="text" class="input-small" name="input-small" id="input-small" placeholder="Sample input small">
+										<input type="text" class="input-small" name="input-small" id="input-small" placeholder=".input-small">
 									</p>
 									
 									<p>
-										<label for="inputmedium">Input Medium</label><br>
-										<input type="text" class="input-medium" name="input-medium" id="input-medium" placeholder="Sample input medium">
+										<input type="text" class="input-medium" name="input-medium" id="input-medium" placeholder=".input-medium">
 									</p>
 									
 									<p>
-										<label for="inputlarge">Input Large</label><br>
-										<input type="text" class="input-large" name="input-large" id="input-large" placeholder="Sample input large">
+										<input type="text" class="input-large" name="input-large" id="input-large" placeholder="input-large">
 									</p>
 									
 									<p>
-										<label for="inputxlarge">Input Xlarge</label><br>
-										<input type="text" class="input-xlarge" name="input-xlarge" id="input-xlarge" placeholder="Sample input xlarge">
+										<input type="text" class="input-xlarge" name="input-xlarge" id="input-xlarge" placeholder=".input-xlarge">
 									</p>
 									
 									<p>
-										<label for="inputxxlarge">Input Xxlarge</label><br>
-										<input type="text" class="input-xxlarge" name="input-xxlarge" id="input-xxlarge" placeholder="Sample input xxlarge">
+										<input type="text" class="input-xxlarge" name="input-xxlarge" id="input-xxlarge" placeholder=".input-xxlarge">
 									</p>
 									
 									<p>
-										<label for="inputxxxlarge">Input Xxxlarge</label><br>
-										<input type="text" class="input-xxxlarge" name="input-xxxlarge" id="input-xxxlarge" placeholder="Sample input xxxlarge">
+										<input type="text" class="input-xxxlarge" name="input-xxxlarge" id="input-xxxlarge" placeholder=".input-xxxlarge">
 									</p>
 									
 									<p>
-										<label for="inputfull">Input Full</label><br>
-										<input type="text" class="input-full" name="input-full" id="input-full" placeholder="Sample input full">
+										<input type="text" class="input-full" name="input-full" id="input-full" placeholder=".input-full">
 									</p>
 									
 									<p>
@@ -269,85 +261,90 @@
 						<hr class="separator">
 						
 						<div class="col-16">
-							<fieldset>
-							  <legend>Basic form elements</legend>
-							  
-								<p>
-									<label for="dummy3">Select field</label><br>
-									<select id="dummy3" name="dummy3">
-										<option value="1">Ottawa</option>
-										<option value="2">Calgary</option>
-										<option value="3">Moosejaw</option>
-									</select>
-								</p>
+							<form id="input" action="" method="post">
+							 <fieldset>
+							 <legend>Basic form elements</legend>
 
-								<p>
-									<label for="dummy4">Select with groups</label><br>
-									<select id="dummy4" name="dummy4">
-										<option>Favorite pet</option>
-										<optgroup label="mammals">
-											<option>dog</option>
-											<option>cat</option>
-											<option>rabbit</option>
-											<option>horse</option>
-										</optgroup>
-										<optgroup label="reptiles">
-											<option>iguana</option>
-											<option>snake</option>
-									  </optgroup>
-									</select>
-								</p>
-								
-								<p>
-									<label>Multiple Select</label><br>
-									<select id="select_multi" name="select_multi" multiple="multiple" size="10">
-										<optgroup label="Group 1">
-										  <option value="1">Some text goes here</option>
-										  <option value="2">Another choice could be here</option>
-										  <option value="3">Yet another item to be chosen</option>
-										</optgroup>
-										<optgroup label="Group 2">
-										  <option value="4">Some text goes here</option>
-										  <option value="5">Another choice could be here</option>
-										  <option value="6">Yet another item to be chosen</option>
-										</optgroup>
-										<optgroup label="Group 3">
-										  <option value="7">Some text goes here</option>
-										  <option value="8">Another choice could be here</option>
-										  <option value="9">Yet another item to be chosen</option>
-										</optgroup>
-									</select>
-								</p>
+							  <p>
+							   <label for="country">Select Country</label><br>
+							   <select id="country" name="country">
+								 <option value="1">Indonesia</option>
+								 <option value="2">Spain</option>
+								 <option value="3">U.S</option>
+							   </select>
+							  </p>
 
-								<p><label>Radio buttons</label><br>
-									<input type="radio" name="example"> Radio one<br>
-									<input type="radio" name="example"> Radio two<br>
-									<input type="radio" name="example"> Radio three<br>
-								</p>
+							  <p>
+							   <label for="pet">Select with groups</label><br>
+							   <select id="pet" name="pet">
+								 <option>Favorite pet</option>
+								   <optgroup label="mammals">
+									 <option>dog</option>
+									 <option>cat</option>
+									 <option>rabbit</option>
+									 <option>horse</option>
+								   </optgroup>
+								 <optgroup label="reptiles">
+								   <option>iguana</option>
+								   <option>snake</option>
+								 </optgroup>
+							   </select>
+							  </p>
 
-								<p><label>Checkboxes</label><br>
-									<input type="checkbox"> Check one<br>
-									<input type="checkbox"> Check two<br>
-									<input type="checkbox"> Check three<br>
-								</p>
-								
-								<p>	<label>File Upload</label><br>
-									<input type="file" id="file" name="file" />
-								</p>
-								
-								<input type="submit" value="Input - Submit" />
-								&nbsp;
-								<input type="button" value="Input - Button" />
-								&nbsp;
-								<input type="reset" value="Input - Reset" />
-								&nbsp;
-								<button>Button tag</button>
-								
-							</fieldset>
+							  <p>
+							   <label>Multiple Select</label><br>
+							   <select id="select_multi" name="select_multi" multiple="multiple" size="10">
+								 <optgroup label="Group 1">
+								   <option value="1">Some text goes here</option>
+								   <option value="2">Another choice could be here</option>
+								   <option value="3">Yet another item to be chosen</option>
+								 </optgroup>
+								 <optgroup label="Group 2">
+								   <option value="4">Some text goes here</option>
+								   <option value="5">Another choice could be here</option>
+								   <option value="6">Yet another item to be chosen</option>
+								 </optgroup>
+								 <optgroup label="Group 3">
+								   <option value="7">Some text goes here</option>
+								   <option value="8">Another choice could be here</option>
+								   <option value="9">Yet another item to be chosen</option>
+								 </optgroup>
+							   </select>
+							  </p>
+
+							  <p>
+								<label>Radio buttons</label><br>
+								<input type="radio" name="example"> Radio one<br>
+								<input type="radio" name="example"> Radio two<br>
+								<input type="radio" name="example"> Radio three<br>
+							  </p>
+
+							  <p>
+								<label>Checkboxes</label><br>
+								<input type="checkbox"> Check one<br>
+								<input type="checkbox"> Check two<br>
+								<input type="checkbox"> Check three<br>
+							  </p>
+
+							  <p>	
+								<label>File Upload</label><br>
+								<input type="file" id="file" name="file" />
+							  </p>
+
+							  <input type="submit" value="Input - Submit" />
+							&nbsp;
+							  <input type="button" value="Input - Button" />
+							&nbsp;
+							  <input type="reset" value="Input - Reset" />
+							&nbsp;
+							  <button>Button tag</button>
+
+							 </fieldset>
+							</form>
 						</div>
 						
 						<div class="col-16">
-							<script src="https://gist.github.com/3015439.js?file=dabblet.html"></script>
+							<script src="https://gist.github.com/3015439.js?file=Basicformelements.html"></script>
 						</div>
 						
 					</div>
