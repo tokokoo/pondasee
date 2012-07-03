@@ -62,5 +62,5 @@ $floatDirection	: left;
 }
 
 @mixin suffix($n) {
-	padding-right: percentage( (($columnWidth + $gutterWidth) * $n ) / $totalContainer );
+	margin-right: percentage( (($columnWidth + $gutterWidth) * $n ) / $totalContainer );
 }
