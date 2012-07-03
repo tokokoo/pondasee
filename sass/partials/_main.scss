@@ -53,6 +53,7 @@ $hide-text-direction: right;
 	}
 	&.dl {
 		@include button-base( #fff, #333, false, false );
+		margin-right: 20px;
 	}
 }
 

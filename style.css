@@ -2169,6 +2169,7 @@ Global and main styles
   background-image: linear-gradient(#ffffff, #f2f2f2);
   color: #333333;
   text-shadow: white 0 1px 1px;
+  margin-right: 20px;
 }
 .btn.dl:hover, .btn.dl:focus {
   background: #f2f2f2;
