@@ -75,11 +75,11 @@ header, hgroup, nav, section, summary {
 
 audio, canvas, video {
   display: -moz-inline-stack;
-  -moz-box-orient: vertical;
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
   *display: inline;
-  vertical-align: top;
-  *zoom: 1;
 }
 
 audio:not([controls]),
@@ -194,126 +194,102 @@ a:focus {
 - Grid Basic
 Grid basic, based on blueprint css framewrok
 ============================================================================= */
-/* 	GRID LAYOUT - 24 column grid
-	24 columns
-	20px Gutter
-	20px Column width
-	----------------- */
 .container {
   margin: 0 auto;
+  max-width: 930px;
+  width: 100%;
   *zoom: 1;
-  width: 940px;
 }
-.container:after {
+.container:before, .container:after {
   content: "";
   display: table;
+}
+.container:after {
   clear: both;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-13, .col-14, .col-15, .col-16, .col-17, .col-18, .col-19, .col-20, .col-21, .col-22, .col-23, .col-24 {
+.row [class*="column"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   display: inline;
   float: left;
-  margin-right: 20px;
+  margin-left: 3.226%;
+  *zoom: 1;
 }
-* html .col-1, * html .col-2, * html .col-3, * html .col-4, * html .col-5, * html .col-6, * html .col-7, * html .col-8, * html .col-9, * html .col-10, * html .col-11, * html .col-12, * html .col-13, * html .col-14, * html .col-15, * html .col-16, * html .col-17, * html .col-18, * html .col-19, * html .col-20, * html .col-21, * html .col-22, * html .col-23, * html .col-24 {
-  overflow-x: hidden;
+.row [class*="column"]:before, .row [class*="column"]:after {
+  content: "";
+  display: table;
 }
-
-.col-1 {
-  width: 20px;
+.row [class*="column"]:after {
+  clear: both;
 }
-
-.col-2 {
-  width: 60px;
-}
-
-.col-3 {
-  width: 100px;
+.row [class*="column"]:first-child {
+  margin-left: 0;
 }
 
-.col-4 {
-  width: 140px;
+.row .col1 {
+  width: 3.226%;
 }
 
-.col-5 {
-  width: 180px;
+.row .col2 {
+  width: 9.677%;
 }
 
-.col-6 {
-  width: 220px;
+.row .col3 {
+  width: 16.129%;
 }
 
-.col-7 {
-  width: 260px;
+.row .col4 {
+  width: 22.581%;
 }
 
-.col-8 {
-  width: 300px;
+.row .col5 {
+  width: 29.032%;
 }
 
-.col-9 {
-  width: 340px;
+.row .col6 {
+  width: 35.484%;
 }
 
-.col-10 {
-  width: 380px;
+.row .col7 {
+  width: 41.935%;
 }
 
-.col-11 {
-  width: 420px;
+.row .col8 {
+  width: 48.387%;
 }
 
-.col-12 {
-  width: 460px;
+.row .col9 {
+  width: 54.839%;
 }
 
-.col-13 {
-  width: 500px;
+.row .col10 {
+  width: 61.29%;
 }
 
-.col-14 {
-  width: 540px;
+.row .col11 {
+  width: 67.742%;
 }
 
-.col-15 {
-  width: 580px;
+.row .col12 {
+  width: 74.194%;
 }
 
-.col-16 {
-  width: 620px;
+.row .col13 {
+  width: 80.645%;
 }
 
-.col-17 {
-  width: 660px;
+.row .col14 {
+  width: 87.097%;
 }
 
-.col-18 {
-  width: 700px;
+.row .col15 {
+  width: 93.548%;
 }
 
-.col-19 {
-  width: 740px;
-}
-
-.col-20 {
-  width: 780px;
-}
-
-.col-21 {
-  width: 820px;
-}
-
-.col-22 {
-  width: 860px;
-}
-
-.col-23 {
-  width: 900px;
-}
-
-.col-24 {
-  width: 940px;
-  margin-right: 0;
+.row .col16 {
+  width: 100%;
 }
 
 /* =============================================================================
@@ -1475,6 +1451,8 @@ legend {
   border: 1px solid #dddddd;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   font-weight: bold;
   display: block;
@@ -1551,6 +1529,8 @@ input,
 textarea {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   -webkit-transition: all 0.2s linear;
   -webkit-transition-delay: 0s;
@@ -1598,6 +1578,8 @@ input[type="button"] {
   -webkit-appearance: none;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   -webkit-background-clip: padding;
   -moz-background-clip: padding;
@@ -1682,6 +1664,8 @@ input[type="week"] {
   background-clip: padding-box;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.075);
@@ -2094,17 +2078,18 @@ List of helper classes (eg clearfix, alignment, etc)
 /* 	CLEARFIX
 	http://nicolasgallagher.com/micro-clearfix-hack/
 	----------------- */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .row:before,
+.clearfix:after,
+.row:after {
   content: "";
   display: table;
 }
 
-.clearfix:after {
+.clearfix:after, .row:after {
   clear: both;
 }
 
-.clearfix {
+.clearfix, .row {
   *zoom: 1;
 }
 

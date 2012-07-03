@@ -1,0 +1,66 @@
+// Simple responsive grid
+// basic and simple responsive grid
+// Author	: Satrya - @msattt
+// URL		: http://tokokoo.com
+//
+// Based on http://framelessgrid.com/
+// =================================================================================
+@import "compass";
+
+// Grid default variable
+$totalColumns  	: 16 !default;
+$columnWidth 	: 30px !default;
+$gutterWidth  	: 30px !default;
+$totalContainer	: ( $totalColumns * ($columnWidth + $gutterWidth) - $gutterWidth );
+$floatDirection	: left;
+
+// The micro clearfix http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin grid-clearfix { 
+	*zoom:1;
+    &:before, &:after { 
+		content: ""; 
+		display: table; 
+	}
+    &:after { 
+		clear: both; 
+	}
+}
+
+// Grid Calculation for Percentages
+@function col($n) {
+	@return percentage( ( $n * ($columnWidth + $gutterWidth) - $gutterWidth ) / $totalContainer );
+}
+
+@mixin container(
+	$margin: 0 auto
+) {
+	margin: $margin;
+	max-width: $totalContainer;
+	width: 100%;
+	@include grid-clearfix; 
+}
+
+@mixin columnBase(
+	$side: $floatDirection
+) {
+	@include box-sizing(border-box);
+	@include float( $side );
+	margin-left: percentage( $gutterWidth / $totalContainer );
+	@include grid-clearfix;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+// Use this mixins to set the width of n columns.
+@mixin column($n) {
+	width: col($n); 
+}
+
+@mixin prefix($n) {
+	margin-left: percentage( (($columnWidth + $gutterWidth) * $n ) / $totalContainer ); 
+}
+
+@mixin suffix($n) {
+	padding-right: percentage( (($columnWidth + $gutterWidth) * $n ) / $totalContainer );
+}
