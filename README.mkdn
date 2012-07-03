@@ -15,6 +15,7 @@ Quick start
 * Clone this project `git clone git://github.com/tokokoo/pondasee.git`
 * Or you can download the zip file [here](https://github.com/tokokoo/pondasee/zipball/master)
 * Compile `pondasee` project folder and you're ready to go! :D
+* Read our simple docs [here](http://tokokoo.github.com/pondasee/docs).
 
 What's inside ?
 -------------------------
