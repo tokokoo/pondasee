@@ -22,7 +22,7 @@ What's inside ?
 
 * [HTML5 Ready](https://github.com/tokokoo/pondasee/blob/master/index.html)
 * [Reset CSS](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_reset.scss)
-* [Basic 24 Col Fixed Grid](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_grid.scss)
+* [Simple Responsive Grid](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_simple-responsive-grid.scss)
 * [Typography](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_typography.scss)
 * [Forms](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_forms.scss)
 * [Table](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_table.scss)
