@@ -34,3 +34,34 @@
 		text-rendering: optimizeLegibility; /* http://aestheticallyloyal.com/public/optimize-legibility/ */
 	}	
 }
+
+// Border Radius
+// Modifed version from http://compass-style.org/reference/compass/css3/border_radius/
+// -o- and -ms- vendor prefix not exist for border radius
+$default-rad: 5px !default;
+
+@mixin border-radius($rad: $default-rad) {
+	-webkit-border-radius	: $rad;
+	-moz-border-radius		: $rad;
+	border-radius			: $rad;
+}
+
+// Mixin for cross browser inline-block
+// http://blog.mozilla.org/webdev/2009/02/20/cross-browser-inline-block/
+// ------------------
+@mixin inline-block {
+	display: -moz-inline-stack;
+	-moz-box-orient: vertical;
+	display: inline-block;
+	*display: inline;
+	vertical-align: top;
+	*zoom: 1;
+}
+
+// Mixin for cross browser opacity
+// http://css3please.com/
+// ------------------
+@mixin opacity($opacity) {
+	opacity: $opacity; // Chrome 4+, FF2+, Saf3.1+, Opera 9+, IE9, iOS 3.2+, Android 2.1+
+	filter: alpha(opacity=$opacity * 100); // IE6-IE8
+}
