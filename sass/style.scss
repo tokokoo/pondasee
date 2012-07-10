@@ -14,8 +14,8 @@ Author URI:		http://tokokoo.com
 		Simpler version of Normalize.css + Eric Meyer Reset
 	- Base
 		Baseline, selection & links
-	- Grid Basic
-		Grid basic, based on blueprint css framewrok
+	- Basic Responsive Grid
+		Grid basic
 	- Typography
 		Headings, text element, lists, code, and more
 	- Font Awesome
@@ -56,8 +56,8 @@ Baseline, selection & links
 @import "partials/base";
 
 /* =============================================================================
-- Grid Basic
-Grid basic, based on blueprint css framewrok
+- Basic Responsive Grid
+Grid basic
 ============================================================================= */
 @import "partials/grid";
 
@@ -117,6 +117,6 @@ Styles for responsive layouts
 
 /* =============================================================================
 - Conditional IE class
-	Style for IE only
+Style for IE only
 ============================================================================= */
 @import "partials/ie";

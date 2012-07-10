@@ -18,10 +18,10 @@
 // Font mixins
 // ------------------
 @mixin ff-text {
-	font-family: $arial; // Basic & global font
+	font-family: $arial; // Global font
 }
 @mixin ff-heading {
-	font-family: $arial; // Font only for all heading eg. h1, h2 etc
+	font-family: $arial; // Heading font
 }
 @mixin ff-decorative{
 	font-family: $cursive;
