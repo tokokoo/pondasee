@@ -2,7 +2,7 @@
 /*
 Theme Name:		Pondasee
 Theme URI:  	
-Version: 		0.1
+Version: 		2.0
 Author: 		Satrya
 Author URI:		http://tokokoo.com
 */
@@ -11,15 +11,13 @@ Author URI:		http://tokokoo.com
    Table of Contents
    =============================================================================
 	- Reset Stylesheet
-		Simpler version of Normalize.css + Eric Meyer Reset
+		Simple version of Normalize.css
 	- Base
 		Baseline, selection & links
 	- Basic Responsive Grid
 		Grid basic
 	- Typography
 		Headings, text element, lists, code, and more
-	- Font Awesome
-		Font icons
 	- Form
 		Base styles for various input types and form layouts
 	- Table
@@ -45,7 +43,7 @@ Author URI:		http://tokokoo.com
 
 /* =============================================================================
 - Reset Stylesheet
-Simpler version of Normalize.css + Eric Meyer Reset
+Simple version of Normalize.css
 ============================================================================= */
 @import "partials/reset";
 
@@ -66,12 +64,6 @@ Grid basic
 Headings, text element, lists, code, and more
 ============================================================================= */
 @import "partials/typography";
-
-/* =============================================================================
-- Font Awesome
-Font icons - http://fortawesome.github.com/Font-Awesome
-============================================================================= */
-@import "partials/font-awesome";
 
 /* =============================================================================
 - Form

@@ -1,24 +1,6 @@
 // Media Queries
-// media queries syntax
 // pros @Aris_FM
 // =================================================================================
-
-/* iPad & Tablets*/
-@media screen and (min-width: 768px) and (max-width: 959px) {}
-
-/* Tablets Portrait & Big Smartphone Landscape */
-@media screen and (min-width: 600px) and (max-width: 767px) {}
-
-/* Smartphone Landscape */
-@media screen and (min-width: 480px) and (max-width: 599px) {}
-
-/* Smartphone */
-@media screen and (min-width: 320px) and (max-width: 479px) {}
-
-/* Featured Phone (rarely used since featured phone often doesn't support CSS3) */
-@media screen and (max-width: 319px) {}
-
-
 
 // Be Prepared for SASS 3.2, embrace yourself! (or use it right now, if you already using SASS pre version)
 

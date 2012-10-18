@@ -39,7 +39,7 @@ $linkColor			: #00baff !default;
 $linkHover			: darken($linkColor, 10%) !default;
 $linkVisited		: darken($linkHover, 5%) !default;
 $linkFocus			: $linkHover !default;
-$linkActive			: lighten(adjust-hue($linkColor, 75deg), 10%) !default;
+$linkActive			: lighten($linkColor, 10%) !default;
 
 
 // ================================================================================
