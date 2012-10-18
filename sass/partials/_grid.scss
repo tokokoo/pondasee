@@ -8,7 +8,7 @@
 }
 
 .row {
-	@extend .clearfix;
+	@include grid-clearfix;
 	[class*="column"] {
 		@include columnBase;
 	}

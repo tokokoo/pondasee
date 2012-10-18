@@ -10,30 +10,18 @@ Author URI:		http://tokokoo.com
 /* 
    Table of Contents
    =============================================================================
-	- Reset Stylesheet
-		Simple version of Normalize.css
-	- Base
-		Baseline, selection & links
-	- Basic Responsive Grid
-		Grid basic
-	- Typography
-		Headings, text element, lists, code, and more
-	- Form
-		Base styles for various input types and form layouts
-	- Table
-		Base styles for all tables
-	- Images
-		Basic and global styles for images, caption, & gallery
-	- Main
-		Global and main styles
-	- Utilities
-		List of helper classes (eg clearfix, alignment, etc)
-	- Plugins
-		Available plugins (eg slider, tooltip, lightbox, etc)
-	- Media Queries
-		Styles for responsive layouts
-	- Conditional IE class
-		Style for IE only
+	0 Reset Stylesheet
+	1 Base
+	2 Grid Layout
+	3 Typography
+	4 Form
+	5 Table
+	6 Images
+	7 Main
+	8 Utilities
+	9 Plugins
+	10 Media Queries
+	11 Conditional IE class
    =============================================================================
 */
 
@@ -43,72 +31,60 @@ Author URI:		http://tokokoo.com
 
 /* =============================================================================
 - Reset Stylesheet
-Simple version of Normalize.css
 ============================================================================= */
 @import "partials/reset";
 
 /* =============================================================================
 - Base
-Baseline, selection & links
 ============================================================================= */
 @import "partials/base";
 
 /* =============================================================================
-- Basic Responsive Grid
-Grid basic
+- Grid Layout
 ============================================================================= */
 @import "partials/grid";
 
 /* =============================================================================
 - Typography
-Headings, text element, lists, code, and more
 ============================================================================= */
 @import "partials/typography";
 
 /* =============================================================================
 - Form
-Base styles for various input types and form layouts
 ============================================================================= */
 @import "partials/forms";
 
 /* =============================================================================
 - Table
-Base styles for all tables
 ============================================================================= */
 @import "partials/table";
 
 /* =============================================================================
 - Images
-Basic and global styles for images, caption, & gallery
 ============================================================================= */
 @import "partials/images";
 
 /* =============================================================================
 - Main
-Global and main styles
 ============================================================================= */
 @import "partials/main";
 
 /* =============================================================================
 - Utilities
-List of helper classes (eg clearfix, alignment, etc)
 ============================================================================= */
 @import "partials/utilities";
 
 /* =============================================================================
 - Plugins
-Available plugins (eg slider, tooltip, lightbox)
 ============================================================================= */
 @import "partials/plugins";
 
 /* =============================================================================
 - Media Queries
-Styles for responsive layouts
 ============================================================================= */
 @import "partials/media-queries";
 
 /* =============================================================================
 - Conditional IE class
-Style for IE only
 ============================================================================= */
 @import "partials/ie";

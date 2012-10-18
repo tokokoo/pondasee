@@ -8,35 +8,22 @@ Author URI:		http://tokokoo.com
 /* 
    Table of Contents
    =============================================================================
-	- Reset Stylesheet
-		Simple version of Normalize.css
-	- Base
-		Baseline, selection & links
-	- Basic Responsive Grid
-		Grid basic
-	- Typography
-		Headings, text element, lists, code, and more
-	- Form
-		Base styles for various input types and form layouts
-	- Table
-		Base styles for all tables
-	- Images
-		Basic and global styles for images, caption, & gallery
-	- Main
-		Global and main styles
-	- Utilities
-		List of helper classes (eg clearfix, alignment, etc)
-	- Plugins
-		Available plugins (eg slider, tooltip, lightbox, etc)
-	- Media Queries
-		Styles for responsive layouts
-	- Conditional IE class
-		Style for IE only
+	0 Reset Stylesheet
+	1 Base
+	2 Grid Layout
+	3 Typography
+	4 Form
+	5 Table
+	6 Images
+	7 Main
+	8 Utilities
+	9 Plugins
+	10 Media Queries
+	11 Conditional IE class
    =============================================================================
 */
 /* =============================================================================
 - Reset Stylesheet
-Simple version of Normalize.css
 ============================================================================= */
 body {
   margin: 0;
@@ -111,7 +98,6 @@ table {
 
 /* =============================================================================
 - Base
-Baseline, selection & links
 ============================================================================= */
 * html {
   font-size: 100%;
@@ -170,8 +156,7 @@ a:focus {
 }
 
 /* =============================================================================
-- Basic Responsive Grid
-Grid basic
+- Grid Layout
 ============================================================================= */
 .container {
   margin: 0 auto;
@@ -187,6 +172,16 @@ Grid basic
   clear: both;
 }
 
+.row {
+  *zoom: 1;
+}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
 .row [class*="column"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -273,7 +268,6 @@ Grid basic
 
 /* =============================================================================
 - Typography
-Headings, text element, lists, code, and more
 ============================================================================= */
 /* 	HEADING
 	----------------- */
@@ -501,7 +495,6 @@ dd {
 
 /* =============================================================================
 - Form
-Base styles for various input types and form layouts
 ============================================================================= */
 /* 	BASE FORM STYLES
 	----------------- */
@@ -552,7 +545,6 @@ textarea {
 
 /* =============================================================================
 - Table
-Base styles for all tables
 ============================================================================= */
 /* 	STANDARD TABLE
 	----------------- */
@@ -593,166 +585,11 @@ table.striped tr:nth-child(odd) {
 
 /* =============================================================================
 - Images
-Basic and global styles for images, caption, & gallery
 ============================================================================= */
-/* 	BASE IMAGES STYLES
-	include w/ WordPress classes
-	----------------- */
-img[class*="align"],
-img[class*="wp-image-"],
-img[class*="attachment-"] {
+img {
   height: auto;
 }
 
-img.size-full,
-img.size-large {
-  max-width: 97.5%;
-  height: auto;
-}
-
-img.wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0;
-}
-
-img.alignleft,
-img.alignright,
-img.aligncenter {
-  margin-top: 10px;
-}
-
-/* 	CAPTION
-	----------------- */
-p img,
-.wp-caption,
-.caption,
-.caption {
-  margin-top: 8px;
-}
-
-.wp-caption, .caption {
-  background: whitesmoke;
-  max-width: 96%;
-  padding: 15px 10px 10px;
-  -webkit-transition: all 0.15s ease-in-out;
-  -moz-transition: all 0.15s ease-in-out;
-  -o-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-}
-.wp-caption img, .caption img {
-  display: block;
-  margin: 0 auto;
-  max-width: 98%;
-}
-.wp-caption:hover, .caption:hover {
-  background: #eeeeee;
-}
-
-.wp-caption-text, .caption-text {
-  color: #555555;
-  font-size: 12px;
-  margin: 0;
-  padding: 15px 0 5px 40px;
-  position: relative;
-}
-.wp-caption-text:before, .caption-text:before {
-  content: '\2014';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: bold;
-  margin-right: 5px;
-  position: absolute;
-  left: 10px;
-  top: 17px;
-}
-
-/* 	GALLERY
-	----------------- */
-.gallery {
-  margin: auto;
-  overflow: hidden;
-  width: 100%;
-}
-.gallery .gallery-item {
-  display: inline;
-  float: left;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.gallery .gallery-caption {
-  background: #f7f7f7;
-  border: 1px solid #e6e6e6;
-  clear: both;
-  color: #888;
-  display: block;
-  font-size: 12px;
-  margin: 10px 0;
-  padding: 5px 3px;
-  text-align: center;
-  width: 100%;
-}
-.gallery dl {
-  margin: 0;
-}
-.gallery img {
-  border: 1px solid #e0e0e0;
-}
-.gallery a:hover img {
-  border-color: #cccccc;
-}
-.gallery br {
-  clear: both;
-}
-.gallery br + br {
-  display: none;
-}
-
-.gallery-columns-1 .gallery-item {
-  width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-  width: 50%;
-}
-
-.gallery-columns-3 .gallery-item {
-  width: 33.333%;
-}
-
-.gallery-columns-4 .gallery-item {
-  margin-right: 2%;
-  width: 23%;
-}
-
-.gallery-columns-5 .gallery-item {
-  margin-right: 2%;
-  width: 18%;
-}
-
-.gallery-columns-6 .gallery-item {
-  margin-right: 2%;
-  width: 14.666%;
-}
-
-.gallery-columns-7 .gallery-item {
-  margin-right: 2%;
-  width: 12.285%;
-}
-
-.gallery-columns-8 .gallery-item {
-  margin-right: 2%;
-  width: 10.5%;
-}
-
-.gallery-columns-9 .gallery-item {
-  margin-right: 2%;
-  width: 9.111%;
-}
-
-/* 	ATTACHMENT
-	----------------- */
 embed,
 iframe,
 object {
@@ -762,7 +599,6 @@ object {
 
 /* =============================================================================
 - Main
-Global and main styles
 ============================================================================= */
 /*
  * Sample seperate main styles
@@ -793,24 +629,19 @@ Global and main styles
 
 /* =============================================================================
 - Utilities
-List of helper classes (eg clearfix, alignment, etc)
 ============================================================================= */
 /* 	CLEARFIX
 	http://nicolasgallagher.com/micro-clearfix-hack/
 	----------------- */
-.clearfix:before, .row:before,
-.clearfix:after,
-.row:after {
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-
-.clearfix:after, .row:after {
+.clearfix:after {
   clear: both;
-}
-
-.clearfix, .row {
-  *zoom: 1;
 }
 
 /* 	CLEAR ELEMENT
@@ -984,13 +815,10 @@ hr.lightborder {
 
 /* =============================================================================
 - Plugins
-Available plugins (eg slider, tooltip, lightbox)
 ============================================================================= */
 /* =============================================================================
 - Media Queries
-Styles for responsive layouts
 ============================================================================= */
 /* =============================================================================
 - Conditional IE class
-Style for IE only
 ============================================================================= */
