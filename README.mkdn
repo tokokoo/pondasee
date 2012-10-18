@@ -1,7 +1,7 @@
 [PONDASEE](http://tokokoo.github.com/pondasee)
 ========================
 
-Pondasee is NOT a css framework, it is only our front-end starter kit combined with the power of SCSS & Compass to build a theme. If you want to use this project as your starting point, you need to know basic knowledge of [Compass](http://compass-style.org/) and [Sass](http://sass-lang.com/).
+Pondasee is a little front-end web developer framework to help designer or developer. 
 
 Requirement
 -------------------------
@@ -10,28 +10,11 @@ Requirement
 
 Quick start
 -------------------------
-* Install Compass, you can read on compass official site, [here](http://compass-style.org/install/)
-* Or update your Compass to the latest version `gem install compass`
 * Clone this project `git clone git://github.com/tokokoo/pondasee.git`
 * Or you can download the zip file [here](https://github.com/tokokoo/pondasee/zipball/master)
 * Compile `pondasee` project folder and you're ready to go! :D
 * Read our simple docs [here](http://tokokoo.github.com/pondasee/docs).
 
-What's inside ?
--------------------------
-
-* [HTML5 Ready](https://github.com/tokokoo/pondasee/blob/master/index.html)
-* [Reset CSS](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_reset.scss)
-* [Simple Responsive Grid](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_simple-responsive-grid.scss)
-* [Typography](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_typography.scss)
-* [Forms](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_forms.scss)
-* [Table](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_table.scss)
-* [Images](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_images.scss)
-* [Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_basic-buttons.scss)
-* [Extra] [Zurb Button Mixin](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_zurb-button.scss)
-* [Helper Classes](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_utilities.scss)
-* [Helper Mixins](https://github.com/tokokoo/pondasee/blob/master/sass/partials/mixins/_helper.scss)
-* [Font Stack](https://github.com/tokokoo/pondasee/blob/master/sass/partials/_variable.scss#L53)
 
 Project information
 -------------------------
@@ -48,10 +31,7 @@ Components
 * [Modernizr](https://github.com/Modernizr/Modernizr): MIT/BSD license
 * [jQuery](https://github.com/jquery/jquery): MIT/GPL license
 * [Normalize.css](https://github.com/necolas/normalize.css): Public Domain
-* [Formalize](https://github.com/nathansmith/formalize): MIT/GPL license
 * [Selectivizr](https://github.com/keithclark/selectivizr): MIT license
-* [NWmatcher](https://github.com/dperini/nwmatcher): MIT license
-* [Font Awesome](https://github.com/FortAwesome/Font-Awesome): CC BY 3.0 license
 
 Everything else
 -------------------------
