@@ -20,6 +20,39 @@
 	height: 0;
 }
 
+/*	Inline-Block
+	-------------------- */
+.iblock {
+	@include inline-block;
+}
+
+/* 	Break text
+	-------------------- */
+.break {
+    word-break: break-all;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+/* 	Truncate text
+	-------------------- */
+.truncate {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+/* 	Hide text
+	-------------------- */
+.hide-text {
+	overflow: hidden;
+	text-align: left;
+	text-indent: -119988px;
+}
+
+
 /* 	IMAGE REPLACEMENT
 	----------------- */
 .ir { 
@@ -144,7 +177,7 @@ hr {
 	}
 }
 
-/* 	MISC CLASSES
+/* 	POSITIONING
 	----------------- */
 .first { 
 	margin-left: 0; 

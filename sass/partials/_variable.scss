@@ -4,13 +4,8 @@
 
 // Grid & baseline setup
 // ------------------
-$base-font-size					: 16px;
-$base-line-height				: 24px;
-$grid-background-baseline-color	: rgba(black, .05);
-$grid-background-column-color	: rgba(red, .1);
-$grid-background-total-columns	: 24;
-$grid-background-column-width	: 20px;
-$grid-background-gutter-width	: 20px; 
+$base-font-size		: 16px;
+$base-line-height	: 24px;
 
 // Global Palettes
 // ------------------
@@ -36,10 +31,10 @@ $altColor			: $gray !default;
 // Link Palettes
 // -------------------------
 $linkColor			: #00baff !default;
-$linkHover			: darken($linkColor, 10%) !default;
-$linkVisited		: darken($linkHover, 5%) !default;
+$linkHover			: darken( $linkColor, 10% ) !default;
+$linkVisited		: darken( $linkHover, 5% ) !default;
 $linkFocus			: $linkHover !default;
-$linkActive			: lighten($linkColor, 10%) !default;
+$linkActive			: lighten( $linkColor, 10% ) !default;
 
 
 // ================================================================================
